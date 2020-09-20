@@ -1,9 +1,31 @@
 @import "reset.css";
+@import "aside.css";
 @import "variables.css";
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
 
 body {
   font-family: "Nanum Gothic", sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template:
+    "aside header"
+    "aside main"
+    "footer footer"
+    / 200px 1fr;
+  height: 100vh;
+}
+.grid header {
+  grid-area: header;
+}
+.grid aside {
+  grid-area: aside;
+}
+.grid main {
+  grid-area: main;
+}
+.grid footer {
+  grid-area: footer;
 }
 
 .background.background--yellow {
