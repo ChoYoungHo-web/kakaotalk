@@ -6,10 +6,14 @@
 body {
   font-family: "Nanum Gothic", sans-serif;
 }
+header,
+main {
+  margin: 0 20px;
+}
 .grid {
   display: grid;
   grid-template:
-    "aside header"
+    "aside header" 90px
     "aside main"
     "footer footer"
     / 80px 1fr;
@@ -27,6 +31,11 @@ body {
 .grid footer {
   grid-area: footer;
 }
+
+.icon--size {
+  width: 30px;
+}
+/* login */
 
 .background.background--yellow {
   background-color: var(--yellow);
@@ -121,4 +130,15 @@ body {
 
 .find-info li a {
   color: rgba(0, 0, 0, 0.6);
+}
+
+/* index */
+.grid--header__top {
+  display: flex;
+  justify-content: space-between;
+}
+.grid--header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

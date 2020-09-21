@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body class="grid">
-    <header>
-      <h2>친구</h2>
-      <i>친구 추가</i>
-      <form action="">
+    <header class="grid--header">
+      <div class="grid--header__top">
+        <h2 class="grid--header__title">친구</h2>
+        <img
+          src="images/icons/add-user.png"
+          class="icon--size"
+          alt="친구 추가"
+          title="친구 추가"
+        />
+      </div>
+      <form class="grid--header__form" action="">
         <i>검색바</i>
         <input type="text" placeholder="이름 검색" />
       </form>
@@ -18,28 +25,60 @@
     <aside>
       <ul class="top-emoticon">
         <li>
-          <a href=""><img src="images/icons/user.png" alt="친구" /></a>
-        </li>
-        <li>
-          <a class="top-emoticon__chat" href=""
-            ><img src="images/icons/chat.png" alt="채팅"
+          <a href=""
+            ><img
+              class="icon--size"
+              src="images/icons/user.png"
+              alt="친구"
+              title="친구"
           /></a>
         </li>
         <li>
-          <a href=""><img src="images/icons/more.png" alt="더보기" /></a>
+          <a class="top-emoticon__chat" href=""
+            ><img
+              class="icon--size"
+              src="images/icons/chat.png"
+              alt="채팅"
+              title="채팅"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img
+              class="icon--size"
+              src="images/icons/more.png"
+              alt="더보기"
+              title="더보기"
+          /></a>
         </li>
       </ul>
       <ul class="bottom-emoticon">
         <li>
           <a href=""
-            ><img src="images/icons/shop.png" alt="카카오 이모티콘샵"
+            ><img
+              class="icon--size"
+              src="images/icons/shop.png"
+              alt="카카오 이모티콘샵"
+              title="카카오 이모티콘샵"
           /></a>
         </li>
         <li>
-          <a href=""><img src="images/icons/bell.png" alt="알림" /></a>
+          <a href=""
+            ><img
+              src="images/icons/bell.png"
+              class="icon--size"
+              alt="알림"
+              title="알림"
+          /></a>
         </li>
         <li>
-          <a href=""><img src="images/icons/settings.png" alt="설정" /></a>
+          <a href=""
+            ><img
+              src="images/icons/settings.png"
+              class="icon--size"
+              alt="설정"
+              title="설정"
+          /></a>
         </li>
       </ul>
     </aside>

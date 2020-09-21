@@ -13,9 +13,6 @@ aside ul {
 aside ul li {
   padding-bottom: 30px;
 }
-aside ul li a img {
-  width: 30px;
-}
 
 .top-emoticon li a img {
   opacity: 0.4;
@@ -37,4 +34,8 @@ aside ul li a img {
   border-radius: 10px;
   color: #fff;
   background-color: #f03e3e;
+}
+
+.bottom-emoticon {
+  justify-content: flex-end;
 }
