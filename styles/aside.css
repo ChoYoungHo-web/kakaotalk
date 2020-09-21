@@ -10,3 +10,9 @@ aside ul {
   align-items: center;
   justify-content: center;
 }
+aside ul li {
+  padding-bottom: 30px;
+}
+aside ul li a img {
+  width: 30px;
+}
