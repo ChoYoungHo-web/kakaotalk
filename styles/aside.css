@@ -1,7 +1,7 @@
 aside {
   display: flex;
   flex-direction: column;
-  border: 1px solid gray;
+  background-color: #f1f3f5;
 }
 aside ul {
   display: flex;
@@ -15,4 +15,26 @@ aside ul li {
 }
 aside ul li a img {
   width: 30px;
+}
+
+.top-emoticon li a img {
+  opacity: 0.4;
+}
+.top-emoticon__chat {
+  position: relative;
+}
+.top-emoticon__chat::after {
+  content: "3";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -23px;
+  left: 14px;
+  width: 30px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #f03e3e;
 }
