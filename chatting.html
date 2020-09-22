@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카카오톡</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body class="grid">
+    <header class="grid--header">
+      <div class="header-container">
+        <div class="grid--header__top">
+          <h2 class="grid--header__title">채팅</h2>
+          <div class="grid--image">
+            <img
+              class="icon--size"
+              src="images/icons/open-chat.png"
+              alt="오픈 채팅"
+              title="오픈 채팅"
+            />
+            <img
+              class="icon--size"
+              src="images/icons/chatting-start.png"
+              alt="새로운 채팅"
+              title="새로운 채팅"
+            />
+          </div>
+        </div>
+        <form class="grid--header--form" action="">
+          <!-- <img src="images/icons/search.png" alt="검색" /> -->
+          <input
+            class="grid--header--form__search"
+            type="text"
+            placeholder="채팅방 이름, 참가자 검색"
+            maxlength="30"
+          />
+        </form>
+      </div>
+    </header>
+    <aside>
+      <ul class="top-emoticon">
+        <li>
+          <a href="index.html"
+            ><img
+              class="icon--size"
+              src="images/icons/user.png"
+              alt="친구"
+              title="친구"
+          /></a>
+        </li>
+        <li>
+          <a class="top-emoticon__chatting" href="chatting.html"
+            ><img
+              class="icon--size"
+              src="images/icons/chat.png"
+              alt="채팅"
+              title="채팅"
+              style="opacity: 1"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img
+              class="icon--size"
+              src="images/icons/more.png"
+              alt="더보기"
+              title="더보기"
+          /></a>
+        </li>
+      </ul>
+      <ul class="bottom-emoticon">
+        <li>
+          <a href=""
+            ><img
+              class="icon--size"
+              src="images/icons/shop.png"
+              alt="카카오 이모티콘샵"
+              title="카카오 이모티콘샵"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="images/icons/bell.png"
+              class="icon--size"
+              alt="알림"
+              title="알림"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="images/icons/settings.png"
+              class="icon--size"
+              alt="설정"
+              title="설정"
+          /></a>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <div class="main-container">
+        <article>
+          <ul>
+            <li class="friend-list">
+              <div class="profile-image__small">
+                <img
+                  class="profile-image__small--setting"
+                  src="images/profile/default-profile_2.png"
+                  alt="내 프로필"
+                />
+              </div>
+              <div class="friend-list__text">
+                <div class="friend-list--title">
+                  <img
+                    class="friend-list__image"
+                    src="images/icons/chatting-icon.png"
+                    alt="채팅 아이콘"
+                  />
+                  <span class="friend-list__name">채팅 이름</span>
+                  <span class="friend-list__number">40</span>
+                  <img
+                    class="friend-list__serence-bell"
+                    src="images/icons/serene-bell.png"
+                    alt="알림 종료"
+                  />
+                </div>
+                <div class="status-message">메세지</div>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

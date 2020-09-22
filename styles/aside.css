@@ -17,10 +17,10 @@ aside ul li {
 .top-emoticon li a img {
   opacity: 0.4;
 }
-.top-emoticon__chat {
+.top-emoticon__chatting {
   position: relative;
 }
-.top-emoticon__chat::after {
+.top-emoticon__chatting::after {
   content: "3";
   display: flex;
   justify-content: center;
