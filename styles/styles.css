@@ -6,14 +6,6 @@
 body {
   font-family: "Nanum Gothic", sans-serif;
 }
-header,
-main {
-  width: 90%;
-  margin: 0 auto;
-}
-main {
-  margin-top: 20px;
-}
 
 .grid {
   display: grid;
@@ -23,6 +15,7 @@ main {
     "footer footer"
     / 80px 1fr;
   height: 100vh;
+  overflow: hidden;
 }
 .grid header {
   grid-area: header;
@@ -32,6 +25,7 @@ main {
 }
 .grid main {
   grid-area: main;
+  overflow-y: auto;
 }
 .grid footer {
   grid-area: footer;
@@ -139,14 +133,19 @@ main {
 }
 
 /* index */
-.grid--header__top {
-  display: flex;
-  justify-content: space-between;
+.header-container {
+  width: 90%;
+  margin: 0 auto;
 }
+
 .grid--header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+.grid--header__top {
+  display: flex;
+  justify-content: space-between;
 }
 .grid--header--form {
   position: relative;
@@ -179,4 +178,58 @@ main {
   border: 1px solid var(--gray);
   border-radius: 15px;
   background-color: var(--gray);
+}
+
+.main-container {
+  margin: 20px 5% 0 0;
+}
+
+.friend-list {
+  display: flex;
+  padding: 10px 0 10px 5%;
+
+  cursor: pointer;
+}
+.friend-list:hover {
+  background-color: red;
+}
+.friend-list:nth-last-child(1) {
+  margin-bottom: 10px;
+}
+
+.friend-list__profile {
+  border: 1px solid gray;
+  width: 70px;
+  height: 70px;
+  margin-right: 5%;
+}
+.friend-list__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.friend-list__one-line {
+  display: flex;
+  align-items: center;
+}
+.friend-list__name {
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.status-message {
+  font-size: 13px;
+}
+
+.category-list__h3 {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0 10px 0;
+  margin-left: 5%;
+  border-top: 1px solid gray;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
 }

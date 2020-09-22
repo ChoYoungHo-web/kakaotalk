@@ -8,24 +8,26 @@
   </head>
   <body class="grid">
     <header class="grid--header">
-      <div class="grid--header__top">
-        <h2 class="grid--header__title">친구</h2>
-        <img
-          src="images/icons/add-user.png"
-          class="icon--size"
-          alt="친구 추가"
-          title="친구 추가"
-        />
+      <div class="header-container">
+        <div class="grid--header__top">
+          <h2 class="grid--header__title">친구</h2>
+          <img
+            src="images/icons/add-user.png"
+            class="icon--size"
+            alt="친구 추가"
+            title="친구 추가"
+          />
+        </div>
+        <form class="grid--header--form" action="">
+          <!-- <img src="images/icons/search.png" alt="검색" /> -->
+          <input
+            class="grid--header--form__search"
+            type="text"
+            placeholder="이름 검색"
+            maxlength="30"
+          />
+        </form>
       </div>
-      <form class="grid--header--form" action="">
-        <!-- <img src="images/icons/search.png" alt="검색" /> -->
-        <input
-          class="grid--header--form__search"
-          type="text"
-          placeholder="이름 검색"
-          maxlength="30"
-        />
-      </form>
     </header>
     <aside>
       <ul class="top-emoticon">
@@ -88,39 +90,75 @@
       </ul>
     </aside>
     <main>
-      <div class="my-list">
-        <div class="my-list__profile"></div>
-        <div class="my-list__my-name">내 이름</div>
-        <div class="status-message">상태 메세지</div>
+      <div class="main-container">
+        <article>
+          <div class="friend-list">
+            <div class="friend-list__profile"></div>
+            <div class="friend-list__text">
+              <div class="friend-list__name">내 이름</div>
+              <div class="status-message">상태 메세지</div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h3 class="category-list__h3">생일인 친구</h3>
+          <div class="friend-list">
+            <div class="friend-list__profile profile-image"></div>
+            <div class="friend-list__one-line">
+              <div class="friend-list__name">친구의 생일을 확인해보세요!</div>
+              <div class="status-message">2</div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <ul>
+            <h3 class="category-list__h3">즐겨찾기</h3>
+            <li class="friend-list">
+              <div class="friend-list__profile profile-image"></div>
+              <div class="friend-list__text">
+                <div class="friend-list__name">내 이름</div>
+                <div class="status-message">상태 메세지</div>
+              </div>
+            </li>
+            <li class="friend-list">
+              <div class="friend-list__profile profile-image"></div>
+              <div class="friend-list__text">
+                <div class="friend-list__name">내 이름</div>
+                <div class="status-message">상태 메세지</div>
+              </div>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h3 class="category-list__h3">채널</h3>
+          <div class="friend-list">
+            <div class="friend-list__profile profile-image"></div>
+            <div class="friend-list__one-line">
+              <div class="friend-list__name">친구의 생일을 확인해보세요!</div>
+              <div class="status-message">2</div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <ul>
+            <h3 class="category-list__h3">친구<span>4</span></h3>
+            <li class="friend-list">
+              <div class="friend-list__profile profile-image"></div>
+              <div class="friend-list__text">
+                <div class="friend-list__name">내 이름</div>
+                <div class="status-message">상태 메세지</div>
+              </div>
+            </li>
+            <li class="friend-list">
+              <div class="friend-list__profile profile-image"></div>
+              <div class="friend-list__text">
+                <div class="friend-list__name">내 이름</div>
+                <div class="status-message">상태 메세지</div>
+              </div>
+            </li>
+          </ul>
+        </article>
       </div>
-      <ul class="friend-birthday">
-        <li>
-          <div class="friend-birthday__profile"></div>
-          <div class="friend-birthday__name">생일 친구 이름</div>
-          <div class="status-message">상태 메세지</div>
-        </li>
-      </ul>
-      <ul class="favorites-list">
-        <li>
-          <div class="favorites-list__profile"></div>
-          <div class="favorites-list__name">생일 친구 이름</div>
-          <div class="status-message">상태 메세지</div>
-        </li>
-      </ul>
-      <ul class="channel-list">
-        <li>
-          <div class="friend-birthday__profile"></div>
-          <div class="friend-birthday__name">생일 친구 이름</div>
-          <div class="status-message">상태 메세지</div>
-        </li>
-      </ul>
-      <ul class="friend-list">
-        <li>
-          <div class="friend-birthday__profile"></div>
-          <div class="friend-birthday__name">생일 친구 이름</div>
-          <div class="status-message">상태 메세지</div>
-        </li>
-      </ul>
     </main>
     <footer>광고</footer>
   </body>
