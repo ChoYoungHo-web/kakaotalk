@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body class="grid">
-    <header class="grid--header">
+    <header class="flex grid--header">
       <div class="header-container">
-        <div class="grid--header__top">
+        <div class="flex grid--header__top">
           <h2 class="grid--header__title">친구</h2>
           <img
             src="images/icons/add-user.png"
@@ -29,63 +29,62 @@
         </form>
       </div>
     </header>
-    <aside>
-      <ul class="top-emoticon">
-        <li>
+    <aside class="flex aside">
+      <ul class="flex top-emoticon aside__ul">
+        <li class="aside__ul__li">
           <a href="index.html"
             ><img
-              class="icon--size"
               src="images/icons/user.png"
               alt="친구"
               title="친구"
-              style="opacity: 1"
+              class="icon--size aside__img--opacity"
           /></a>
         </li>
-        <li>
+        <li class="aside__ul__li">
           <a class="top-emoticon__chatting" href="chatting.html"
             ><img
-              class="icon--size"
               src="images/icons/chat.png"
               alt="채팅"
               title="채팅"
+              class="icon--size aside__img--opacity"
           /></a>
         </li>
-        <li>
+        <li class="aside__ul__li">
           <a href=""
             ><img
-              class="icon--size"
               src="images/icons/more.png"
               alt="더보기"
               title="더보기"
+              class="icon--size aside__img--opacity"
           /></a>
         </li>
       </ul>
-      <ul class="bottom-emoticon">
-        <li>
+      <ul class="flex bottom-emoticon aside__ul">
+        <li class="aside__ul__li">
           <a href=""
             ><img
-              class="icon--size"
               src="images/icons/shop.png"
               alt="카카오 이모티콘샵"
               title="카카오 이모티콘샵"
+              class="icon--size"
           /></a>
         </li>
-        <li>
+        <li class="aside__ul__li">
           <a href=""
             ><img
               src="images/icons/bell.png"
-              class="icon--size"
               alt="알림"
               title="알림"
+              class="icon--size"
           /></a>
         </li>
-        <li>
+        <li class="aside__ul__li">
           <a href=""
             ><img
               src="images/icons/settings.png"
-              class="icon--size"
               alt="설정"
               title="설정"
+              class="icon--size"
           /></a>
         </li>
       </ul>

@@ -1,20 +1,18 @@
-aside {
-  display: flex;
+.aside {
   flex-direction: column;
   background-color: var(--gray_1);
 }
-aside ul {
-  display: flex;
+.aside__ul {
   flex-direction: column;
   flex: 1;
   align-items: center;
   justify-content: center;
 }
-aside ul li {
+.aside__ul__li {
   padding-bottom: 30px;
 }
 
-.top-emoticon li a img {
+.aside__img--opacity {
   opacity: 0.4;
 }
 .top-emoticon__chatting {

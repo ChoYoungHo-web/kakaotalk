@@ -142,12 +142,10 @@ body {
 }
 
 .grid--header {
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 .grid--header__top {
-  display: flex;
   justify-content: space-between;
 }
 .grid--header--form {
