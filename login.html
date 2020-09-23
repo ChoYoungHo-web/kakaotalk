@@ -6,26 +6,56 @@
     <title>카카오톡 : 로그인</title>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body class="background background--yellow">
-    <header class="login-header">
-      <img src="images/icons/kakao-icon.png" alt="카카오톡 아이콘" />
+  <body class="body--background">
+    <header class="flex flex__container-center">
+      <img
+        src="images/icons/kakao-icon.png"
+        alt="카카오톡 아이콘"
+        class="login--img"
+      />
     </header>
     <main class="login-main">
-      <form class="login-form" action="">
-        <input type="text" placeholder="카카오계정 (이메일 또는 전화번호)" />
-        <input type="password" placeholder="비밀번호" />
-        <input class="login-form__btn" type="submit" value="로그인" />
-        <div class="login-form__auto-check">
-          <input id="autoLogin" type="checkbox" />
-          <label for="autoLogin"><span>자동로그인</span></label>
+      <form class="flex login__form" action="">
+        <input
+          type="text"
+          placeholder="카카오계정 (이메일 또는 전화번호)"
+          class="login__form--input"
+        />
+        <input
+          type="password"
+          placeholder="비밀번호"
+          class="login__form--input"
+        />
+        <input
+          type="submit"
+          value="로그인"
+          class="login__form--input login__form--btn"
+        />
+        <div class="login__form--auto-check">
+          <input
+            id="autoLogin"
+            type="checkbox"
+            class="login__form--input none"
+          />
+          <label for="autoLogin" class="login__form--auto-check-label"
+            ><span class="login__form--auto-check-label-span"
+              >자동로그인</span
+            ></label
+          >
         </div>
       </form>
     </main>
-    <footer class="login-footer">
-      <ul class="find-info">
-        <li><a href="find-id.html">카카오계정 찾기</a></li>
-        <li><a href="reset-pwd.html">비밀번호 재설정</a></li>
-        <li><a href="sign-up.html">회원가입</a></li>
+    <footer class="flex flex__container-center">
+      <ul class="flex find-info">
+        <li class="find-info__li">
+          <a href="find-id.html" class="find-info__li-a">카카오계정 찾기</a>
+        </li>
+        <li class="find-info__li">
+          <a href="reset-pwd.html" class="find-info__li-a">비밀번호 재설정</a>
+        </li>
+        <li class="find-info__li">
+          <a href="sign-up.html" class="find-info__li-a">회원가입</a>
+        </li>
       </ul>
     </footer>
   </body>

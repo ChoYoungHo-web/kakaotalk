@@ -1,4 +1,10 @@
 :root {
+  --rgba_1: rgba(0, 0, 0, 0.1);
+  --rgba_2: rgba(0, 0, 0, 0.2);
+  --rgba_3: rgba(0, 0, 0, 0.3);
+  --rgba_4: rgba(0, 0, 0, 0.4);
+  --rgba_5: rgba(0, 0, 0, 0.5);
+  --rgba_6: rgba(0, 0, 0, 0.6);
   --white: #fff;
   --yellow: #ffeb33;
   --gray_0: #f8f9fa;

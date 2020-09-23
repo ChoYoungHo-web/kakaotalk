@@ -7,6 +7,18 @@ body {
   font-family: "Nanum Gothic", sans-serif;
 }
 
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+.flex__container-center {
+  justify-content: center;
+  align-items: center;
+}
+
 .grid {
   display: grid;
   grid-template:
@@ -39,100 +51,88 @@ body {
 }
 /* login */
 
-.background.background--yellow {
+.body--background {
   background-color: var(--yellow);
 }
-.login-header,
-.login-footer {
-  display: flex;
-  justify-content: center;
-}
-.login-header img {
+
+.login--img {
   width: 150px;
   margin: 40px 0;
 }
-.login-form {
-  display: flex;
+
+.login__form {
   flex-direction: column;
   margin: 0 80px;
 }
-.login-form input {
+.login__form--input {
   padding: 12px 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--rgba_1);
   border-radius: 1px;
 }
-.login-form input::placeholder,
-.login-form__btn {
-  color: rgba(0, 0, 0, 0.3);
+.login__form--input::placeholder {
+  color: var(--rgba_3);
 }
-.login-form__btn {
+.login__form--btn {
   border-radius: 2px !important;
+  color: var(--rgba_3);
   margin-top: 5px;
 }
-.login-form__auto-check {
+.login__form--auto-check {
   position: relative;
   padding-top: 10px;
 }
 
-.login-form__auto-check label {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 13px;
-  vertical-align: text-top;
-}
-
-.login-form__auto-check input {
-  display: none;
-}
-.login-form__auto-check label {
+.login__form--auto-check-label {
   display: inline-block;
   width: 20px;
   height: 20px;
+  vertical-align: text-top;
+  font-size: 13px;
+  color: var(--rgba_5);
   background-color: var(--white);
   border-radius: 3px;
   cursor: pointer;
 }
 
-.login-form__auto-check label.checked {
+.login__form--auto-check-label.checked {
   background: url("../images/icons/check.png") var(--white) no-repeat
     center/10px 10px;
 }
 
-.login-form__auto-check label span {
+.login__form--auto-check-label-span {
   position: absolute;
   top: 14px;
   left: 30px;
 }
 .find-info {
-  display: flex;
   font-size: 14px;
   margin-top: 100px;
 }
 
-.find-info li {
+.find-info__li {
   position: relative;
-
   padding-right: 20px;
 }
 
-.find-info li:nth-of-type(n + 1)::after {
+.find-info__li:nth-of-type(n + 1)::after {
   content: "";
   width: 1px;
   height: 13px;
   position: absolute;
   top: 0;
   right: 10px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--rgba_3);
 }
 
-.find-info li:last-child {
+.find-info__li:last-child {
   padding-right: 0;
 }
-.find-info li:last-child::after {
+.find-info__li:last-child::after {
   display: none;
 }
 
-.find-info li a {
-  color: rgba(0, 0, 0, 0.6);
+.find-info__li-a {
+  color: var(--rgba_6);
 }
 
 /* index */
@@ -229,6 +229,7 @@ body {
 .friend-list__one-line {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .friend-list__name {
   font-size: 14px;
@@ -262,6 +263,7 @@ body {
 .friend-list--title {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .friend-list__serence-bell {
@@ -294,6 +296,6 @@ body {
   background-color: var(--red);
 }
 
-footer {
+/* footer {
   background-color: var(--gray_2);
-}
+} */
