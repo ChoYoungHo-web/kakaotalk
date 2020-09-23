@@ -1,6 +1,6 @@
 .aside {
   flex-direction: column;
-  background-color: var(--gray_1);
+  background-color: var(--gray_2);
 }
 .aside__ul {
   flex-direction: column;

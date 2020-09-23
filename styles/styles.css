@@ -66,15 +66,15 @@ body {
 }
 .login__form--input {
   padding: 12px 10px;
-  border: 1px solid var(--rgba_1);
+  border: 1px solid var(--gray_1);
   border-radius: 1px;
 }
 .login__form--input::placeholder {
-  color: var(--rgba_3);
+  color: var(--gray_3);
 }
 .login__form--btn {
   border-radius: 2px !important;
-  color: var(--rgba_3);
+  color: var(--gray_3);
   margin-top: 5px;
 }
 .login__form--auto-check {
@@ -88,7 +88,7 @@ body {
   height: 20px;
   vertical-align: text-top;
   font-size: 13px;
-  color: var(--rgba_5);
+  color: var(--gray_5);
   background-color: var(--white);
   border-radius: 3px;
   cursor: pointer;
@@ -121,7 +121,7 @@ body {
   position: absolute;
   top: 0;
   right: 10px;
-  background-color: var(--rgba_3);
+  background-color: var(--gray_3);
 }
 
 .find-info__li:last-child {
@@ -132,10 +132,9 @@ body {
 }
 
 .find-info__li-a {
-  color: var(--rgba_6);
+  color: var(--gray_6);
 }
 
-/* index */
 .header-container {
   width: 90%;
   margin: 0 auto;
@@ -148,12 +147,12 @@ body {
 .grid--header__top {
   justify-content: space-between;
 }
-.grid--header--form {
+.grid--header__form {
   position: relative;
   padding-top: 10px;
 }
 
-.grid--header--form::before {
+.grid--header__form::before {
   content: "";
   width: 17px;
   height: 17px;
@@ -163,7 +162,7 @@ body {
   background: url("../images/icons/search.png") no-repeat;
   background-size: 17px 17px;
 }
-.grid--header--form::after {
+.grid--header__form::after {
   content: "";
   width: 20px;
   height: 20px;
@@ -173,118 +172,106 @@ body {
   background: url("../images/icons/error.png") no-repeat;
   background-size: 20px 20px;
 }
-.grid--header--form__search {
+.grid--header__form--search {
   width: 100%;
   padding: 7px 100px 7px 40px;
-  border: 1px solid var(--gray_2);
+  border: 1px solid var(--gray_1);
   border-radius: 15px;
-  background-color: var(--gray_2);
+  background-color: var(--gray_1);
 }
 
 .main-container {
   margin: 20px 5% 0 0;
 }
 
-.friend-list {
-  display: flex;
+.main-list {
   padding: 10px 0 10px 5%;
-
   cursor: pointer;
 }
-.friend-list:hover {
-  background-color: var(--gray_0);
+.main-list:hover {
+  background-color: var(--gray_1);
 }
-.friend-list:nth-last-child(1) {
+.main-list:nth-last-child(1) {
   margin-bottom: 10px;
 }
 
-.profile-iamge__big {
+.profile-iamge--big {
   width: 70px;
   height: 70px;
   margin-right: 5%;
 }
-.profile-iamge__big--setting {
+.profile-iamge--big--radius {
   width: 100%;
   border-radius: 25px;
 }
 
-.profile-image__small {
+.profile-image--small {
   width: 50px;
   height: 50px;
   margin-right: 5%;
 }
-.profile-image__small--setting {
+.profile-image--small--radius {
   width: 100%;
   border-radius: 20px;
 }
 
-.friend-list__text {
-  display: flex;
+.main-list__text {
   flex-direction: column;
   justify-content: space-evenly;
   flex: 1;
 }
-.friend-list__one-line {
-  display: flex;
+.main-list__title {
   align-items: center;
-  justify-content: center;
 }
-.friend-list__name {
+
+.main-list__name {
   font-size: 14px;
   font-weight: bold;
   padding-right: 10px;
 }
-.status-message {
+.main-list__message {
   font-size: 13px;
+  color: var(--gray_7);
 }
 
-.category-list__h3 {
+.main-list__h3 {
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.8);
+  color: var(--gray_6);
   padding: 10px 0 10px 0;
   margin-left: 5%;
-  border-top: 1px solid var(--gray_2);
+  border-top: 1px solid var(--gray_1);
 }
 
-.friend-list__image {
+.main-list__image {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   margin-right: 5px;
 }
-.friend-list__number {
+
+.main-list__number {
   font-size: 13px;
-  opacity: 0.6;
+  color: var(--gray_6);
   margin-right: 5px;
 }
 
-.friend-list--title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.friend-list__serence-bell {
+.main-list__serence-bell {
   width: 13px;
   height: 13px;
-  opacity: 0.6;
+  color: var(--gray_6);
 }
 
-.friend-list--more {
-  display: flex;
+.main-list--more {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-end;
   flex: 1;
 }
-.friend-list--more__date {
+.main-list--more__date {
   font-size: 11px;
-  opacity: 0.6;
+  color: var(--gray_6);
 }
-.friend-list--more__chatting-number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-list--more__chatting-number {
   width: 30px;
   height: 20px;
   font-size: 12px;

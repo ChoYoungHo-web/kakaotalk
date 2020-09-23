@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body class="grid">
-    <header class="grid--header">
+    <header class="flex grid--header">
       <div class="header-container">
-        <div class="grid--header__top">
+        <div class="flex grid--header__top">
           <h2 class="grid--header__title">채팅</h2>
           <div class="grid--image">
             <img
@@ -26,10 +26,10 @@
             />
           </div>
         </div>
-        <form class="grid--header--form" action="">
+        <form class="grid--header__form" action="">
           <!-- <img src="images/icons/search.png" alt="검색" /> -->
           <input
-            class="grid--header--form__search"
+            class="grid--header__form--search"
             type="text"
             placeholder="채팅방 이름, 참가자 검색"
             maxlength="30"
@@ -101,34 +101,38 @@
       <div class="main-container">
         <article>
           <ul>
-            <li class="friend-list">
-              <div class="profile-image__small">
+            <li class="flex main-list">
+              <div class="profile-image--small">
                 <img
-                  class="profile-image__small--setting"
+                  class="profile-image--small--radius"
                   src="images/profile/default-profile_2.png"
                   alt="내 프로필"
                 />
               </div>
-              <div class="friend-list__text">
-                <div class="friend-list--title">
+              <div class="flex main-list__text">
+                <div class="flex main-list__title">
                   <img
-                    class="friend-list__image"
+                    class="main-list__image"
                     src="images/icons/chatting-icon.png"
                     alt="채팅 아이콘"
                   />
-                  <span class="friend-list__name">채팅 이름</span>
-                  <span class="friend-list__number">40</span>
+                  <span class="main-list__name">채팅 이름</span>
+                  <span class="main-list__number">40</span>
                   <img
-                    class="friend-list__serence-bell"
+                    class="main-list__serence-bell"
                     src="images/icons/serene-bell.png"
                     alt="알림 종료"
                   />
                 </div>
-                <div class="status-message">메세지</div>
+                <div class="main-list__message">메세지</div>
               </div>
-              <div class="friend-list--more">
-                <div class="friend-list--more__date">어제</div>
-                <div class="friend-list--more__chatting-number">11</div>
+              <div class="flex main-list--more">
+                <div class="main-list--more__date">어제</div>
+                <div
+                  class="flex flex__container-center main-list--more__chatting-number"
+                >
+                  11
+                </div>
               </div>
             </li>
           </ul>
