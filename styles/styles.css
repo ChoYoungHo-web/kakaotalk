@@ -187,13 +187,14 @@ body {
 }
 
 .main-more {
-  margin: 0 5% 0 0;
+  margin: 0 5% 0 5%;
 }
 
 .main-list {
   padding: 10px 0 10px 5%;
   cursor: pointer;
 }
+
 .main-list:hover {
   background-color: var(--gray_1);
 }
@@ -264,12 +265,12 @@ body {
   background-color: var(--red);
 }
 
-.profile-iamge--big {
+.profile-image--big {
   width: 70px;
   height: 70px;
   margin-right: 5%;
 }
-.profile-iamge--big--radius {
+.profile-image--big--radius {
   width: 100%;
   border-radius: 25px;
 }
@@ -282,6 +283,30 @@ body {
 .profile-image--small--radius {
   width: 100%;
   border-radius: 20px;
+}
+
+.main-more__border {
+  border: 1px solid var(--gray_1);
+  background-color: var(--gray_1);
+  border-radius: 5px;
+  margin: 25px 0;
+}
+.main-more__border--width-100 {
+  width: 100%;
+}
+.main-more__border--paddig {
+  padding: 15px 0;
+}
+.main-more__border--zone {
+  flex: 1;
+}
+.main-more__border--icon {
+  font-size: 25px;
+  text-align: center;
+}
+.main-more__border--title {
+  font-size: 14px;
+  padding-top: 10px;
 }
 
 /* footer {
