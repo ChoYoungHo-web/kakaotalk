@@ -12,7 +12,7 @@ body {
 }
 
 .flex {
-  display: flex;
+  display: flex !important;
 }
 .flex__container-center {
   justify-content: center;
@@ -302,11 +302,29 @@ body {
 }
 .main-more__border--icon {
   font-size: 25px;
-  text-align: center;
+  padding-bottom: 10px;
 }
 .main-more__border--title {
-  font-size: 14px;
-  padding-top: 10px;
+  font-size: 13px;
+}
+.main-more__li--after {
+  position: relative;
+}
+.main-more__li--after::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 0;
+  width: 1px;
+  height: 46px;
+  background-color: var(--gray_2);
+}
+
+.main-more__sub-menu--li {
+  display: inline-block;
+  width: calc(90% / 4);
+  text-align: center;
+  padding: 20px 0;
 }
 
 /* footer {
