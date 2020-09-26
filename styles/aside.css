@@ -37,3 +37,21 @@
 .bottom-emoticon {
   justify-content: flex-end;
 }
+
+.bottom-emoticon__setting-sub {
+  position: absolute;
+  left: 80px;
+  bottom: 50px;
+  border: 1px solid var(--gray_9);
+  background-color: var(--white);
+}
+.bottom-emoticon__setting-sub__ul {
+  padding: 5px 0;
+}
+.bottom-emoticon__setting-sub__li {
+  font-size: 14px;
+  padding: 5px 15px;
+}
+.bottom-emoticon__setting-sub__li:hover {
+  background-color: var(--gray_1);
+}
