@@ -20,6 +20,11 @@ body {
   align-items: center;
 }
 
+.body__fix {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .grid {
   display: grid;
   grid-template:
@@ -27,8 +32,6 @@ body {
     "aside main"
     "footer footer" 50px
     / 80px 1fr;
-  height: 100vh;
-  overflow: hidden;
 }
 .grid header {
   grid-area: header;
@@ -339,10 +342,10 @@ body {
 .chatting-header__column {
   width: 33%;
 }
-
 .chatting-header__name-form {
   justify-content: center;
 }
+
 .chatting-header__name-form--name {
   flex-direction: column;
   justify-content: space-between;
@@ -350,6 +353,58 @@ body {
 
 .chatting-header__menu {
   justify-content: flex-end;
+}
+
+.chatting-main {
+  height: calc(100vh - 90px - 120px);
+  background-color: var(--blue_1);
+}
+
+.chatting-main__date {
+  padding: 10px;
+}
+
+.chatting-main__date--before {
+  position: relative;
+  width: 33%;
+}
+.chatting-main__date--before::before,
+.chatting-main__date--after::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray_4);
+}
+.chatting-main__date--text {
+  justify-content: center;
+  width: 33%;
+  font-size: 13px;
+}
+.chatting-main__date--after {
+  position: relative;
+  width: 33%;
+}
+
+.chatting-main__speech-bubble {
+  text-align: justify;
+  margin: 0 7% 0 20%;
+}
+
+.chatting-main__speech-bubble--style {
+  position: relative;
+  border: 1px solid var(--yellow);
+  border-radius: 5px;
+  box-shadow: 0 1px 3px var(--gray_3);
+  background-color: var(--yellow);
+  padding: 10px;
+}
+.chatting-main__speech-bubble--size {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /* footer {
