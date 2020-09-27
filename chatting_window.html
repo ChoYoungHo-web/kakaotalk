@@ -14,7 +14,7 @@
     <header class="chatting-header--background-color">
       <div class="flex flex__container-center chatting-header">
         <i class="fas fa-2x fa-arrow-left chatting-header__column"></i>
-        <div class="flex chatting-header__name-form chatting-header__column">
+        <div class="flex chatting-header__column chatting-header--name">
           <div class="chatting-header__img profile-image--small">
             <img
               src="images/profile/default-profile_1.png"
@@ -22,12 +22,12 @@
               class="profile-image--small--radius"
             />
           </div>
-          <div class="flex chatting-header__name-form--name">
-            <div class="main-list__name">내 이름</div>
-            <i class="fas fa-search"></i>
+          <div class="flex flex__container-center">
+            <span>이름</span>
           </div>
         </div>
         <div class="flex chatting-header__menu chatting-header__column">
+          <i class="fas fa-search fa-2x chatting-header__menu--search"></i>
           <i class="fas fa-bars fa-2x"></i>
         </div>
       </div>
@@ -56,6 +56,17 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="chatting-window-footer">
+        <form action="" class="flex chatting-window-footer__form">
+          <textarea
+            name=""
+            class="chatting-window-footer__form--textarea"
+            id=""
+          ></textarea>
+          <button class="chatting-window-footer__form--button">전송</button>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>

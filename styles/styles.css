@@ -342,17 +342,16 @@ body {
 .chatting-header__column {
   width: 33%;
 }
-.chatting-header__name-form {
-  justify-content: center;
-}
 
-.chatting-header__name-form--name {
-  flex-direction: column;
-  justify-content: space-between;
+.chatting-header--name {
+  justify-content: center;
 }
 
 .chatting-header__menu {
   justify-content: flex-end;
+}
+.chatting-header__menu--search {
+  padding-right: 15px;
 }
 
 .chatting-main {
@@ -410,3 +409,16 @@ body {
 /* footer {
   background-color: var(--gray_2);
 } */
+.chatting-window-footer {
+  margin: 10px;
+}
+
+.chatting-window-footer__form--textarea {
+  width: 100%;
+  height: 70px;
+}
+.chatting-window-footer__form--button {
+  width: 55px;
+  height: 30px;
+  margin-left: 10px;
+}
