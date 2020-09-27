@@ -328,6 +328,30 @@ body {
   padding: 20px 0;
 }
 
+.chatting-header--background-color {
+  background-color: var(--blue_0);
+}
+
+.chatting-header {
+  padding: 20px 10px;
+}
+
+.chatting-header__column {
+  width: 33%;
+}
+
+.chatting-header__name-form {
+  justify-content: center;
+}
+.chatting-header__name-form--name {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chatting-header__menu {
+  justify-content: flex-end;
+}
+
 /* footer {
   background-color: var(--gray_2);
 } */
