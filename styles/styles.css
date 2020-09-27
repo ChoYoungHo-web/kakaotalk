@@ -422,3 +422,6 @@ body {
   height: 30px;
   margin-left: 10px;
 }
+.chatting-window-footer__sub-menu {
+  justify-content: space-between;
+}
