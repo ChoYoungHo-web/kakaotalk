@@ -11,22 +11,25 @@
     ></script>
   </head>
   <body class="grid body__fix">
-    <header class="flex grid--header">
+    <header class="flex grid__header">
       <div class="header-container">
-        <div class="flex grid--header__top">
-          <h2 class="grid--header__title">채팅</h2>
+        <div class="flex grid__header--top">
+          <h2 class="grid__header--title">채팅</h2>
           <div class="grid--image">
-            <i class="far fa-comments fa-2x icon--size" title="오픈 채팅"></i>
             <i
-              class="fas fa-comment-medical fa-2x icon--size"
+              class="far fa-comments icon--size grid__header--icon-size"
+              title="오픈 채팅"
+            ></i>
+            <i
+              class="fas fa-comment-medical icon--size grid__header--icon-size"
               title="새로운 채팅"
             ></i>
           </div>
         </div>
-        <form class="grid--header__form" action="">
+        <form class="grid__header--form" action="">
           <!-- <img src="images/icons/search.png" alt="검색" /> -->
           <input
-            class="grid--header__form--search"
+            class="grid__header--form--search"
             type="text"
             placeholder="채팅방 이름, 참가자 검색"
             maxlength="30"
