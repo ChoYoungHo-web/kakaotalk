@@ -331,12 +331,12 @@ body {
   padding: 20px 0;
 }
 
-.chatting-header--background-color {
-  background-color: var(--blue_0);
+.chatting-header {
+  padding: 10px;
 }
 
-.chatting-header {
-  padding: 20px 10px;
+.chatting-header--background-color {
+  background-color: var(--blue_0);
 }
 
 .chatting-header__column {
@@ -355,7 +355,7 @@ body {
 }
 
 .chatting-main {
-  height: calc(100vh - 90px - 120px);
+  height: calc(100vh - 90px - 90px);
   background-color: var(--blue_1);
 }
 
@@ -406,11 +406,25 @@ body {
   line-height: 1.5;
 }
 
+.lock-mode--height {
+  height: 30vh;
+}
+.lock-mode--margin {
+  margin-bottom: 10px;
+}
+.lock-mode--size {
+  font-size: 14px;
+}
+.lock-mode--font {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 /* footer {
   background-color: var(--gray_2);
 } */
 .chatting-window-footer {
-  margin: 10px;
+  padding: 10px;
 }
 
 .chatting-window-footer__form--textarea {

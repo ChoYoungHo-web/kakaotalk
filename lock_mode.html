@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카카오톡 : 잠금모드</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9452825322.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body--background">
+    <header class="flex flex__container-center lock-mode--height">
+      <div class="profile-image--big">
+        <img
+          class="profile-image--big--radius lock-mode--margin"
+          src="images/profile/default-profile_1.png"
+          alt="내 프로필"
+        />
+        <span class="flex flex__container-center lock-mode--size">이메일</span>
+      </div>
+    </header>
+    <main class="login-main">
+      <span class="flex flex__container-center lock-mode--font"
+        >잠금모드 상태입니다.</span
+      >
+      <form class="flex login__form" action="">
+        <input
+          type="password"
+          placeholder="비밀번호"
+          class="login__form--input"
+        />
+        <input
+          type="submit"
+          value="확인"
+          class="login__form--input login__form--btn"
+        />
+      </form>
+    </main>
+    <footer class="flex flex__container-center">
+      <ul class="flex find-info">
+        <li class="find-info__li">
+          <a href="reset-pwd.html" class="find-info__li-a">비밀번호 재설정</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
