@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>카카오톡 : 회원가입</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9452825322.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="body--background">
+    <header class="flex flex__container-center">
+      <a href="login.html">
+        <img
+          src="images/icons/kakao-icon.png"
+          alt="카카오톡 아이콘"
+          class="login--img"
+        />
+      </a>
+    </header>
+    <main class="login-main">
+      <form class="flex login__form" action="">
+        <input type="text" placeholder="이름" class="login__form--input" />
+        <input
+          type="text"
+          placeholder="이메일 주소"
+          class="login__form--input"
+        />
+        <input
+          type="number"
+          placeholder="휴대폰 번호"
+          class="login__form--input"
+        />
+        <input
+          type="password"
+          placeholder="비밀번호"
+          class="login__form--input"
+        />
+        <input
+          type="password"
+          placeholder="비밀번호 확인"
+          class="login__form--input"
+        />
+        <input
+          type="number"
+          placeholder="생년월일 예시)19951206"
+          class="login__form--input"
+        />
+        <input
+          type="submit"
+          value="회원가입"
+          class="login__form--input login__form--btn"
+        />
+        <div class="login__form--auto-check">
+          <input
+            id="autoLogin"
+            type="checkbox"
+            class="login__form--input none"
+          />
+        </div>
+      </form>
+    </main>
+    <footer class="flex flex__container-center">
+      <ul class="flex find-info">
+        <li class="find-info__li">
+          <a href="find-id.html" class="find-info__li-a">카카오계정 찾기</a>
+        </li>
+        <li class="find-info__li">
+          <a href="reset-pwd.html" class="find-info__li-a">비밀번호 재설정</a>
+        </li>
+        <li class="find-info__li">
+          <a href="sign-up.html" class="find-info__li-a">회원가입</a>
+        </li>
+        <!-- <li id="singUpBtn" class="find-info__li">
+          <span>회원가입</span>
+        </li> -->
+      </ul>
+    </footer>
+  </body>
+</html>
