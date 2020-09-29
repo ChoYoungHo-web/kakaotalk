@@ -69,7 +69,8 @@ body {
   margin: 0 80px;
 }
 .login__form--input {
-  padding: 12px 10px;
+  width: 100%;
+  padding: 20px 10px 4px 10px;
   border: 1px solid var(--gray_1);
   border-radius: 1px;
 }
@@ -78,7 +79,6 @@ body {
 }
 .login__form--btn {
   border-radius: 2px !important;
-  color: var(--gray_3);
   margin-top: 5px;
 }
 .login__form--auto-check {
@@ -108,6 +108,31 @@ body {
   top: 14px;
   left: 30px;
 }
+.input-group {
+  position: relative;
+}
+.input-group__label {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  color: var(--gray_5);
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+.login__form--input:focus ~ .input-group__label,
+.login__form--input:valid ~ .input-group__label {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  color: var(--gray_3);
+  font-size: 13px;
+  pointer-events: none;
+}
+.input__submit--center {
+  padding: 10px;
+}
+
 .find-info {
   height: 200px;
   align-items: center;

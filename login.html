@@ -22,20 +22,23 @@
     </header>
     <main class="login-main">
       <form class="flex login__form" action="">
-        <input
-          type="text"
-          placeholder="카카오계정 (이메일 또는 전화번호)"
-          class="login__form--input"
-        />
-        <input
-          type="password"
-          placeholder="비밀번호"
-          class="login__form--input"
-        />
+        <div class="input-group">
+          <input type="text" class="login__form--input" required />
+          <label class="input-group__label"
+            >카카오계정 (이메일 또는 전화번호 '- 제외')</label
+          >
+        </div>
+
+        <div class="input-group">
+          <input type="password" class="login__form--input" required />
+          <label class="input-group__label">비밀번호</label>
+        </div>
+
         <input
           type="submit"
           value="로그인"
-          class="login__form--input login__form--btn"
+          class="login__form--input input__submit--center login__form--btn"
+          disabled
         />
         <div class="login__form--auto-check">
           <input
@@ -67,5 +70,6 @@
         </li> -->
       </ul>
     </footer>
+    <script src="scritps/btnActivation.js"></script>
   </body>
 </html>

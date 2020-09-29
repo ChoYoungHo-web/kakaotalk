@@ -22,44 +22,36 @@
     </header>
     <main class="login-main">
       <form class="flex login__form" action="">
-        <input type="text" placeholder="이름" class="login__form--input" />
-        <input
-          type="text"
-          placeholder="이메일 주소"
-          class="login__form--input"
-        />
-        <input
-          type="number"
-          placeholder="휴대폰 번호"
-          class="login__form--input"
-        />
-        <input
-          type="password"
-          placeholder="비밀번호"
-          class="login__form--input"
-        />
-        <input
-          type="password"
-          placeholder="비밀번호 확인"
-          class="login__form--input"
-        />
-        <input
-          type="number"
-          placeholder="생년월일 예시)19951206"
-          class="login__form--input"
-        />
+        <div class="input-group">
+          <input type="text" class="login__form--input" required />
+          <label class="input-group__label">이름</label>
+        </div>
+        <div class="input-group">
+          <input type="text" class="login__form--input" required />
+          <label class="input-group__label">이메일 주소</label>
+        </div>
+        <div class="input-group">
+          <input type="text" class="login__form--input" required />
+          <label class="input-group__label">휴대폰 번호</label>
+        </div>
+        <div class="input-group">
+          <input type="text" class="login__form--input" required />
+          <label class="input-group__label">비밀번호</label>
+        </div>
+        <div class="input-group">
+          <input type="text" class="login__form--input" required />
+          <label class="input-group__label">비밀번호 확인</label>
+        </div>
+        <div class="input-group">
+          <input type="text" class="login__form--input" required />
+          <label class="input-group__label">생년월일 예시)19951206</label>
+        </div>
         <input
           type="submit"
           value="회원가입"
-          class="login__form--input login__form--btn"
+          class="login__form--input login__form--btn input__submit--center"
+          disabled
         />
-        <div class="login__form--auto-check">
-          <input
-            id="autoLogin"
-            type="checkbox"
-            class="login__form--input none"
-          />
-        </div>
       </form>
     </main>
     <footer class="flex flex__container-center">
@@ -78,5 +70,6 @@
         </li> -->
       </ul>
     </footer>
+    <script src="scritps/btnActivation.js"></script>
   </body>
 </html>
