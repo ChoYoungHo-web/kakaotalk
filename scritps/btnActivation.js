@@ -1,13 +1,26 @@
 const RESULT = document.querySelector("#submitBtn");
+const URL = document.location.pathname;
 
 let id = document.querySelector('[name="id"]');
 let pwd = document.querySelector('[name="pwd"]');
-let name = document.querySelector('[name="name"]');
+let user = document.querySelector('[name="name"]');
+let birthday = document.querySelector('[name="birthday"]');
 
-checkAll = () => {
+//로그인 로직
+loginCheck = () => {
   if (!checkId(id.value)) {
     return false;
   } else if (!checkPwd(pwd.value)) {
+    return false;
+  }
+  return true;
+};
+
+//계정 찾기 로직
+findIdCheck = () => {
+  if (!checkName(user.value)) {
+    return false;
+  } else if (!checkBirthday(birthday.value)) {
     return false;
   }
   return true;
@@ -42,30 +55,63 @@ checkPwd = (v) => {
   if (!checkExistData(v)) {
     return false;
   }
-  let password = /^[a-zA-z0-9]{4,12}$/;
-  if (v.length < 8 || v.legnth > 21 || !password.test(v)) {
-    alert("영문과 숫자를 포함해 9~20자리 입력해야 합니다.");
-    v = "";
+  let password = /^[a-zA-Z0-9]{9,}$/;
+  let check_num = v.search(/[0-9]/g);
+  let check_eng = v.search(/[a-z]/gi);
+  if (!password.test(v)) {
+    alert("영문과 숫자를 모두 포함해 9자리 이상 입력해야 합니다.");
     pwd.focus();
+    return false;
+  } else if (check_num < 0 || check_eng < 0) {
+    alert("영문과 숫자를 모두 포함해야 합니다.");
     return false;
   }
   return true;
 };
 
-examineHandle = (e) => {
+//이름 확인
+checkName = (v) => {
+  if (!checkExistData(v)) {
+    return false;
+  }
+  if (v.length < 3) {
+    alert("최소 3자리 이상 입력해야 합니다.");
+    return false;
+  }
+  return true;
+};
+
+//생년월일 확인
+checkBirthday = (v) => {
+  if (!checkExistData(v)) {
+    return false;
+  }
+  let check_num = /^[0-9]{8,8}$/;
+  if (!check_num.test(v)) {
+    alert("8자리 숫자만 입력할 수 있습니다.");
+  }
+  return true;
+};
+
+//페이지별 함수 구현
+pageSelect = (e) => {
   e.preventDefault();
   let xhr = new XMLHttpRequest();
 
   xhr.onreadystatechange = () => {
     if (xhr.readyState === 4) {
       if (xhr.status === 200 || xhr.status === 201) {
-        checkAll();
+        if (URL.search("login") === 1) {
+          loginCheck();
+        }
+        if (URL.search("find") === 1) {
+          findIdCheck();
+        }
       }
-      console.log("성공");
     }
   };
   xhr.open("GET", "http://127.0.0.1:5500/");
   xhr.send();
 };
 
-RESULT.addEventListener("click", examineHandle);
+RESULT.addEventListener("click", pageSelect);
