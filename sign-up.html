@@ -23,28 +23,44 @@
     <main class="login-main">
       <form class="flex login__form" action="">
         <div class="input-group">
-          <input type="text" class="login__form--input" required />
+          <input type="text" class="login__form--input" name="name" required />
           <label class="input-group__label">이름</label>
         </div>
         <div class="input-group">
-          <input type="email" class="login__form--input" required />
+          <input type="email" class="login__form--input" name="id" required />
           <label class="input-group__label">이메일 주소</label>
         </div>
         <div class="input-group">
-          <input type="password" class="login__form--input" required />
+          <input
+            type="password"
+            class="login__form--input"
+            name="pwd"
+            required
+          />
           <label class="input-group__label">비밀번호</label>
         </div>
         <div class="input-group">
-          <input type="password" class="login__form--input" required />
+          <input
+            type="password"
+            class="login__form--input"
+            name="pwdCheck"
+            required
+          />
           <label class="input-group__label">비밀번호 확인</label>
         </div>
         <div class="input-group">
-          <input type="text" class="login__form--input" required />
+          <input
+            type="text"
+            class="login__form--input"
+            name="birthday"
+            required
+          />
           <label class="input-group__label">생년월일 예시)19951206</label>
         </div>
         <input
           type="submit"
           value="회원가입"
+          id="submitBtn"
           class="login__form--input login__form--btn input__submit--center"
         />
       </form>

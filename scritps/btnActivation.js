@@ -3,8 +3,11 @@ const URL = document.location.pathname;
 
 let id = document.querySelector('[name="id"]');
 let pwd = document.querySelector('[name="pwd"]');
+let pwdCheck = document.querySelector('[name="pwdCheck"]');
 let user = document.querySelector('[name="name"]');
 let birthday = document.querySelector('[name="birthday"]');
+let changePwd = document.querySelector('[name="changePwd"]');
+let changePwdCheck = document.querySelector('[name="changePwdCheck"]');
 
 //로그인 로직
 loginCheck = () => {
@@ -21,6 +24,42 @@ findIdCheck = () => {
   if (!checkName(user.value)) {
     return false;
   } else if (!checkBirthday(birthday.value)) {
+    return false;
+  }
+  return true;
+};
+
+//비밀번호 재설정 로직
+resetPwdCheck = () => {
+  if (!checkName(user.value)) {
+    return false;
+  } else if (!checkId(id.value)) {
+    return false;
+  } else if (!checkBirthday(birthday.value)) {
+    return false;
+  } else if (!checkPwd(pwd.value)) {
+    return false;
+  } else if (!checkSamePwd(changePwd.value, changePwdCheck.value)) {
+    return false;
+  }
+  return true;
+};
+
+//회원가입 로직
+singUpCheck = () => {
+  if (!checkName(user.value)) {
+    return false;
+  }
+  if (!checkId(id.value)) {
+    return false;
+  }
+  if (!checkPwd(pwd.value)) {
+    return false;
+  }
+  if (!checkSamePwd(pwd.value, pwdCheck.value)) {
+    return false;
+  }
+  if (!checkBirthday(birthday.value)) {
     return false;
   }
   return true;
@@ -69,6 +108,24 @@ checkPwd = (v) => {
   return true;
 };
 
+//패스워드 같은지 확인
+checkSamePwd = (v, check) => {
+  if (!checkExistData(v) || !checkExistData(check)) {
+    return false;
+  }
+  if (!checkPwd(v)) {
+    return false;
+  }
+  if (!checkPwd(check)) {
+    return false;
+  }
+  if (!(v === check)) {
+    alert("비밀번호가 같지 않습니다.");
+    return false;
+  }
+  return true;
+};
+
 //이름 확인
 checkName = (v) => {
   if (!checkExistData(v)) {
@@ -89,6 +146,7 @@ checkBirthday = (v) => {
   let check_num = /^[0-9]{8,8}$/;
   if (!check_num.test(v)) {
     alert("8자리 숫자만 입력할 수 있습니다.");
+    return false;
   }
   return true;
 };
@@ -106,6 +164,12 @@ pageSelect = (e) => {
         }
         if (URL.search("find") === 1) {
           findIdCheck();
+        }
+        if (URL.search("reset") === 1) {
+          resetPwdCheck();
+        }
+        if (URL.search("sign") === 1) {
+          singUpCheck();
         }
       }
     }
