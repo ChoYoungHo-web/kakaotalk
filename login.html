@@ -23,22 +23,34 @@
     <main class="login-main">
       <form class="flex login__form" action="">
         <div class="input-group">
-          <input type="text" class="login__form--input" required />
+          <input
+            type="text"
+            id="idValue"
+            class="login__form--input"
+            name="id"
+            required
+          />
           <label class="input-group__label"
             >카카오계정 (이메일 또는 전화번호 '- 제외')</label
           >
         </div>
 
         <div class="input-group">
-          <input type="password" class="login__form--input" required />
+          <input
+            type="password"
+            id="pwdValue"
+            class="login__form--input"
+            name="pwd"
+            required
+          />
           <label class="input-group__label">비밀번호</label>
         </div>
 
         <input
           type="submit"
           value="로그인"
+          id="submitBtn"
           class="login__form--input input__submit--center login__form--btn"
-          disabled
         />
         <div class="login__form--auto-check">
           <input
@@ -65,9 +77,6 @@
         <li class="find-info__li">
           <a href="sign-up.html" class="find-info__li-a">회원가입</a>
         </li>
-        <!-- <li id="singUpBtn" class="find-info__li">
-          <span>회원가입</span>
-        </li> -->
       </ul>
     </footer>
     <script src="scritps/btnActivation.js"></script>
