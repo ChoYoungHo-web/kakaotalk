@@ -15,16 +15,12 @@
       <div class="header-container">
         <div class="flex grid__header--top">
           <h2 class="grid__header--title">채팅</h2>
-          <div class="grid--image">
-            <i
-              class="far fa-comments icon--size grid__header--icon-size"
-              title="오픈 채팅"
-            ></i>
-            <i
-              class="fas fa-comment-medical icon--size grid__header--icon-size"
-              title="새로운 채팅"
-            ></i>
-          </div>
+          <i
+            id="subClickBtn"
+            class="fas fa-comment-medical icon--size grid__header--icon-size"
+            name="createChatting"
+            title="새로운 채팅"
+          ></i>
         </div>
         <form class="grid__header--form" action="">
           <!-- <img src="images/icons/search.png" alt="검색" /> -->
@@ -135,7 +131,9 @@
           </ul>
         </article>
       </div>
+      <div id="subContainer"></div>
     </main>
     <footer></footer>
+    <script src="scritps/subContainer.js"></script>
   </body>
 </html>

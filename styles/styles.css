@@ -25,6 +25,14 @@ body {
   overflow: hidden;
 }
 
+.sub-container--overflow {
+  overflow: hidden;
+}
+
+.sub-container--background-color {
+  background-color: var(--grid_5);
+}
+
 .grid {
   display: grid;
   grid-template:
@@ -49,9 +57,6 @@ body {
 
 .icon--size {
   width: 30px;
-}
-.grid--image .icon--size:nth-of-type(1) {
-  margin-right: 20px;
 }
 /* login */
 
@@ -359,6 +364,16 @@ body {
   width: calc(90% / 4);
   text-align: center;
   padding: 20px 0;
+}
+
+.sub-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
 }
 
 .chatting-header {
