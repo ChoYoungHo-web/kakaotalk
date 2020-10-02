@@ -6,18 +6,30 @@ let createChatting = document.querySelector('[name="createChatting"]');
 let createSub = document.querySelector("#subContainer");
 
 let friendAddStyle = (v) => {
-  createSub.classList.add("sub-container");
+  if (v.classList[4] === "active") {
+    v.classList.remove("active");
+    createSub.classList.remove("sub-container--create", "sub-friend");
+  } else {
+    v.classList.add("active");
+    createSub.classList.add("sub-container--create", "sub-friend");
+  }
 };
-let crateChattingStyle = () => {
-  createSub.classList.add("sub-container");
+let crateChattingStyle = (v) => {
+  if (v.classList[4] === "active") {
+    v.classList.remove("active");
+    createSub.classList.remove("sub-container--create", "sub-chatting");
+  } else {
+    v.classList.add("active");
+    createSub.classList.add("sub-container--create", "sub-chatting");
+  }
 };
 
 let subContainer = () => {
   if (friendAdd) {
-    friendAddStyle(this);
+    friendAddStyle(friendAdd);
   }
   if (createChatting) {
-    crateChattingStyle(this);
+    crateChattingStyle(createChatting);
   }
 };
 

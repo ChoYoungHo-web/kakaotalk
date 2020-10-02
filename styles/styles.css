@@ -25,6 +25,16 @@ body {
   overflow: hidden;
 }
 
+.sub-container--create {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+}
+
 .sub-container--overflow {
   overflow: hidden;
 }
@@ -364,16 +374,6 @@ body {
   width: calc(90% / 4);
   text-align: center;
   padding: 20px 0;
-}
-
-.sub-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 50%;
-  height: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--white);
 }
 
 .chatting-header {
