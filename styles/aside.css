@@ -39,6 +39,7 @@
 }
 
 .bottom-emoticon__setting-sub {
+  display: block;
   position: absolute;
   left: 80px;
   bottom: 50px;

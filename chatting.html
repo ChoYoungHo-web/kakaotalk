@@ -60,7 +60,7 @@
           ></a>
         </li>
       </ul>
-      <ul class="flex bottom-emoticon aside__ul">
+      <ul id="settingContainer" class="flex bottom-emoticon aside__ul">
         <li class="aside__ul__li">
           <a href="">
             <i
@@ -75,12 +75,14 @@
           ></a>
         </li>
         <li class="aside__ul__li">
-          <a href=""
-            ><i class="fas fa-cog fa-2x icon--size" title="설정"></i
-          ></a>
+          <i
+            id="settingIcon"
+            class="fas fa-cog fa-2x icon--size"
+            title="설정"
+          ></i>
         </li>
       </ul>
-      <div class="bottom-emoticon__setting-sub">
+      <div class="none" name="setting">
         <ul class="bottom-emoticon__setting-sub__ul">
           <li class="bottom-emoticon__setting-sub__li">
             <span>설정</span>
@@ -135,5 +137,6 @@
     </main>
     <footer></footer>
     <script src="scritps/subContainer.js"></script>
+    <script src="scritps/asideSub.js"></script>
   </body>
 </html>
