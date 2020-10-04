@@ -26,15 +26,22 @@
         >잠금모드 상태입니다.</span
       >
       <form class="flex login__form" action="">
-        <input
-          type="password"
-          placeholder="비밀번호"
-          class="login__form--input"
-        />
+        <div class="input-group">
+          <input
+            type="password"
+            id="pwdValue"
+            class="login__form--input"
+            name="pwd"
+            required
+          />
+          <label class="input-group__label">비밀번호</label>
+        </div>
+
         <input
           type="submit"
           value="확인"
-          class="login__form--input login__form--btn"
+          id="submitBtn"
+          class="login__form--input input__submit--center login__form--btn"
         />
       </form>
     </main>
@@ -45,5 +52,6 @@
         </li>
       </ul>
     </footer>
+    <script src="scritps/btnActivation.js"></script>
   </body>
 </html>

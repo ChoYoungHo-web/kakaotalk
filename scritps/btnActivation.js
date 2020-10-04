@@ -65,6 +65,17 @@ singUpCheck = () => {
   return true;
 };
 
+//잠금모드 로직
+lockModeCheck = () => {
+  if (!checkExistData(pwd.value)) {
+    return false;
+  }
+  if (!checkPwd(pwd.value)) {
+    return false;
+  }
+  return true;
+};
+
 //공백 확인
 checkExistData = (ckeck) => {
   if (ckeck === "") {
@@ -170,6 +181,9 @@ pageSelect = (e) => {
         }
         if (URL.search("sign") === 1) {
           singUpCheck();
+        }
+        if (URL.search("lock") === 1) {
+          lockModeCheck();
         }
       }
     }
