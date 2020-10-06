@@ -62,17 +62,13 @@
       </ul>
       <ul id="settingContainer" class="flex bottom-emoticon aside__ul">
         <li class="aside__ul__li">
-          <a href="">
-            <i
-              class="far fa-smile fa-2x icon--size"
-              title="카카오 이모티콘샵"
-            ></i>
-          </a>
+          <i
+            class="far fa-smile fa-2x icon--size"
+            title="카카오 이모티콘샵"
+          ></i>
         </li>
         <li class="aside__ul__li">
-          <a href=""
-            ><i class="far fa-bell fa-2x icon--size" title="알림"></i
-          ></a>
+          <i class="far fa-bell fa-2x icon--size" title="알림"></i>
         </li>
         <li class="aside__ul__li">
           <i
@@ -99,7 +95,7 @@
     <main>
       <div class="main-container">
         <article>
-          <div class="flex main-list">
+          <div class="flex main-list" name="list" id="1">
             <div class="profile-image--big">
               <img
                 class="profile-image--big--radius"
@@ -108,7 +104,7 @@
               />
             </div>
             <div class="flex main-list__text">
-              <div class="main-list__name">내 이름</div>
+              <div class="main-list__name" name="name">조영호</div>
               <div class="main-list__message">상태 메세지</div>
             </div>
           </div>
@@ -132,7 +128,7 @@
         <article>
           <ul>
             <h3 class="main-list__h3">즐겨찾기</h3>
-            <li class="flex main-list">
+            <li class="flex main-list" name="list" id="2">
               <div class="profile-image--small">
                 <img
                   class="profile-image--small--radius"
@@ -141,7 +137,7 @@
                 />
               </div>
               <div class="flex main-list__text">
-                <div class="main-list__name">내 이름</div>
+                <div class="main-list__name" name="name">내 이름</div>
                 <div class="main-list__message">상태 메세지</div>
               </div>
             </li>
@@ -211,6 +207,7 @@
       <div id="subContainer"></div>
       <script src="scritps/subContainer.js"></script>
       <script src="scritps/asideSub.js"></script>
+      <script src="scritps/goChatting.js"></script>
     </main>
     <footer></footer>
   </body>
