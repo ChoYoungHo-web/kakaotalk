@@ -18,7 +18,6 @@
           <i
             id="subClickBtn"
             class="fas fa-user-plus icon--size grid__header--icon-size"
-            name="friendAdd"
             title="친구 추가"
           ></i>
         </div>
@@ -204,14 +203,18 @@
           </ul>
         </article>
       </div>
-      <div id="subContainer" class="none">
+    </main>
+    <article id="subContainer" class="none">
+      <div id="popup">
+        <i id="popupClose" class="fas fa-times popup__icon--size"></i>
         <h3 class="sub-friend--title">친구 추가</h3>
         <p class="sub-friend--text">이메일주소로 추가</p>
         <form action="" class="sub-friend__form">
           <input
-            type="text"
+            type="email"
             placeholder="이메일주소로 추가"
             class="sub-friend__form--email"
+            required
           />
           <input
             type="submit"
@@ -220,10 +223,10 @@
           />
         </form>
       </div>
-      <script src="scritps/subContainer.js"></script>
-      <script src="scritps/asideSub.js"></script>
-      <script src="scritps/goChatting.js"></script>
-    </main>
+    </article>
     <footer></footer>
+    <script src="scritps/subContainer.js"></script>
+    <script src="scritps/asideSub.js"></script>
+    <script src="scritps/goChatting.js"></script>
   </body>
 </html>

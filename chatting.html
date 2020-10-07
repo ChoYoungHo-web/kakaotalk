@@ -18,7 +18,6 @@
           <i
             id="subClickBtn"
             class="fas fa-comment-medical icon--size grid__header--icon-size"
-            name="createChatting"
             title="새로운 채팅"
           ></i>
         </div>
@@ -129,8 +128,22 @@
           </ul>
         </article>
       </div>
-      <div id="subContainer" class="none"></div>
     </main>
+    <article id="subContainer" class="none">
+      <div id="popup">
+        <i id="popupClose" class="fas fa-times popup__icon--size"></i>
+        <h3 class="sub-friend--title">대화상대 선택</h3>
+        <form class="grid__header--form" action="">
+          <!-- <img src="images/icons/search.png" alt="검색" /> -->
+          <input
+            class="grid__header--form--search"
+            type="text"
+            placeholder="이름 검색"
+            maxlength="30"
+          />
+        </form>
+      </div>
+    </article>
     <footer></footer>
     <script src="scritps/subContainer.js"></script>
     <script src="scritps/asideSub.js"></script>
