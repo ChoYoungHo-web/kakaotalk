@@ -1,0 +1,91 @@
+.chatting-window-footer {
+  padding: 10px;
+}
+
+.chatting-window-footer__form--textarea {
+  width: 100%;
+  height: 70px;
+}
+.chatting-window-footer__form--button {
+  width: 55px;
+  height: 30px;
+  margin-left: 10px;
+}
+.chatting-window-footer__sub-menu {
+  justify-content: space-between;
+}
+
+.chatting-header {
+  padding: 10px;
+}
+
+.chatting-header--background-color {
+  background-color: var(--blue_0);
+}
+
+.chatting-header__column {
+  width: 33%;
+}
+
+.chatting-header--name {
+  justify-content: center;
+}
+
+.chatting-header__menu {
+  justify-content: flex-end;
+}
+.chatting-header__menu--search {
+  padding-right: 15px;
+}
+
+.chatting-main {
+  height: calc(100vh - 90px - 90px) !important;
+  background-color: var(--blue_1);
+}
+
+.chatting-main__date {
+  padding: 10px;
+}
+
+.chatting-main__date--before {
+  position: relative;
+  width: 33%;
+}
+.chatting-main__date--before::before,
+.chatting-main__date--after::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray_4);
+}
+.chatting-main__date--text {
+  justify-content: center;
+  width: 33%;
+  font-size: 13px;
+}
+.chatting-main__date--after {
+  position: relative;
+  width: 33%;
+}
+
+.chatting-main__speech-bubble {
+  text-align: justify;
+  margin: 0 7% 0 20%;
+}
+
+.chatting-main__speech-bubble--style {
+  position: relative;
+  border: 1px solid var(--yellow);
+  border-radius: 5px;
+  box-shadow: 0 1px 3px var(--gray_3);
+  background-color: var(--yellow);
+  padding: 10px;
+}
+.chatting-main__speech-bubble--size {
+  font-size: 14px;
+  line-height: 1.5;
+}

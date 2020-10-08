@@ -1,0 +1,112 @@
+.body--background {
+  background-color: var(--yellow);
+}
+
+.login--img {
+  width: 150px;
+  margin: 40px 0;
+}
+
+.login__form {
+  flex-direction: column;
+  margin: 0 80px;
+}
+.login__form--input {
+  width: 100%;
+  padding: 20px 10px 4px 10px;
+  border: 1px solid var(--gray_1);
+  border-radius: 1px;
+}
+.login__form--input::placeholder {
+  color: var(--gray_3);
+}
+.login__form--btn {
+  border-radius: 2px !important;
+  margin-top: 5px;
+}
+.login__form--auto-check {
+  position: relative;
+  padding-top: 10px;
+}
+
+.login__form--auto-check-label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: text-top;
+  font-size: 13px;
+  color: var(--gray_5);
+  background-color: var(--white);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login__form--auto-check-label.checked {
+  background: url("../images/icons/check.png") var(--white) no-repeat
+    center/10px 10px;
+}
+
+.login__form--auto-check-label-span {
+  position: absolute;
+  top: 14px;
+  left: 30px;
+}
+
+.login__form--input:focus ~ .input-group__label,
+.login__form--input:valid ~ .input-group__label {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  color: var(--gray_3);
+  font-size: 13px;
+  pointer-events: none;
+}
+
+.find-info {
+  height: 200px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.find-info__li {
+  position: relative;
+  padding-right: 20px;
+}
+
+.find-info__li:nth-of-type(n + 1)::after {
+  content: "";
+  width: 1px;
+  height: 13px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: var(--gray_3);
+}
+
+.find-info__li:last-child {
+  padding-right: 0;
+}
+.find-info__li:last-child::after {
+  display: none;
+}
+
+.find-info__li-a {
+  color: var(--gray_6);
+}
+
+.lock-mode--height {
+  height: 30vh;
+}
+.lock-mode--delete {
+  margin-right: 0;
+}
+.lock-mode--margin {
+  margin-bottom: 10px;
+}
+.lock-mode--size {
+  font-size: 14px;
+}
+.lock-mode--font {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
