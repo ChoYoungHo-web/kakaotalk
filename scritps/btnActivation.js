@@ -16,6 +16,7 @@ loginCheck = () => {
   } else if (!checkPwd(pwd.value)) {
     return false;
   }
+  window.location.replace(`/index.html`);
   return true;
 };
 
@@ -73,6 +74,7 @@ lockModeCheck = () => {
   if (!checkPwd(pwd.value)) {
     return false;
   }
+  window.location.replace(`/index.html`);
   return true;
 };
 

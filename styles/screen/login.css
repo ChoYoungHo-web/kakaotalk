@@ -98,7 +98,7 @@
   height: 30vh;
 }
 .lock-mode--delete {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 .lock-mode--margin {
   margin-bottom: 10px;
