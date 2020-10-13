@@ -7,7 +7,8 @@ createSetting = (v) => {
     VALUE.classList.remove("active");
     v.classList.remove("aside-sub__setting");
     v.classList.add("none");
-  } else {
+    
+  } else if(VALUE.classList[4] !== 'active') {
     VALUE.classList.add("active");
     v.classList.add("aside-sub__setting");
     v.classList.remove("none");
@@ -15,9 +16,7 @@ createSetting = (v) => {
 };
 
 infoFunction = () => {
-  if (setting) {
-    createSetting(setting);
-  }
+  createSetting(setting);
 };
 
 VALUE.addEventListener("click", infoFunction);

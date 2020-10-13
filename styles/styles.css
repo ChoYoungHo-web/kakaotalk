@@ -25,7 +25,7 @@ body {
   z-index: 1;
 }
 
-.main__sub--over-flow {
+.js-overflow {
   overflow-y: hidden !important;
 }
 
@@ -36,12 +36,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.body__fix {
-  /* height: 100vh; */
-  /* overflow: hidden; */
-}
-
 .sub-container--create {
   position: fixed;
   top: 0;
