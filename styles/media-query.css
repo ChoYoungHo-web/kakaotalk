@@ -45,30 +45,25 @@
 
   .aside-sub__setting {
     display: block;
-    position: fixed;
     left: 80px;
     bottom: 50px;
     border: 1px solid var(--gray_9);
     background-color: var(--white);
     padding: 7px;
   }
-
-  .aside-sub__setting > li {
-    font-size: 14px;
-    padding: 5px 15px;
-  }
-  .aside-sub__setting > li:hover {
-    background-color: var(--gray_1);
-  }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+/* @media (min-width: 768px) and (max-width: 1024px) {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+
+} */
+
+@media (max-width: 1024px) {
   .aside {
     position: fixed;
     bottom: 0;
@@ -100,7 +95,9 @@
   aside {
     z-index: 202;
   }
-}
 
-@media (min-width: 320px) and (max-width: 480px) {
+  .aside-sub__setting {
+    right: 30px;
+    bottom: 80px;
+  }
 }

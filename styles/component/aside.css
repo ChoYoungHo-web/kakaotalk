@@ -20,3 +20,15 @@
   color: #fff;
   background-color: var(--red);
 }
+
+.aside-sub__setting {
+  position: fixed;
+  border: 1px solid var(--gray_9);
+  background-color: var(--white);
+  padding: 7px;
+}
+
+.aside-sub__setting > li {
+  font-size: 14px;
+  padding: 5px 15px;
+}
