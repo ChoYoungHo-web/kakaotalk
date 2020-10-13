@@ -37,6 +37,7 @@
   bottom: 50px;
   border: 1px solid var(--gray_9);
   background-color: var(--white);
+  padding: 7px;
 }
 
 .aside-sub__setting > li {
