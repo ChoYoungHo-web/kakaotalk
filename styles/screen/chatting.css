@@ -1,0 +1,58 @@
+.main-container {
+  margin: 30px 5% 0 0;
+}
+
+.main-list {
+  padding: 10px 0 10px 5%;
+  cursor: pointer;
+}
+
+.main-list:hover {
+  background-color: var(--gray_1);
+}
+.main-list:nth-last-child(1) {
+  margin-bottom: 10px;
+}
+.main-list__text {
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 3;
+}
+.main-list__title {
+  align-items: center;
+}
+
+.main-list__name {
+  font-size: 14px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.main-list__message {
+  font-size: 13px;
+  color: var(--gray_7);
+}
+
+.main-list__h3 {
+  font-size: 12px;
+  color: var(--gray_6);
+  padding: 10px 0 10px 0;
+  margin-left: 5%;
+  border-top: 1px solid var(--gray_1);
+}
+
+.main-list__image {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main-list__number {
+  font-size: 13px;
+  color: var(--gray_6);
+  margin-right: 5px;
+}
+
+.main-list__serence-bell {
+  color: var(--gray_6);
+}

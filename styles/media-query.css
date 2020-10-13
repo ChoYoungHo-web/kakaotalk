@@ -64,6 +64,18 @@
 } */
 
 @media (max-width: 1024px) {
+  .grid__header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 201;
+  }
+
+  aside {
+    z-index: 202;
+  }
+
   .aside {
     position: fixed;
     bottom: 0;
@@ -75,29 +87,16 @@
     background-color: #e9ecef;
     padding: 20px;
   }
-
-  header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: var(--white);
-    z-index: 201;
+  .aside-sub__setting {
+    right: 30px;
+    bottom: 80px;
   }
 
-  main {
+  .main {
     position: relative;
     top: 110px;
     margin-bottom: 80px;
     background-color: #fff;
     z-index: 200;
-  }
-
-  aside {
-    z-index: 202;
-  }
-
-  .aside-sub__setting {
-    right: 30px;
-    bottom: 80px;
   }
 }

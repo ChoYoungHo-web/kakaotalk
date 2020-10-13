@@ -6,8 +6,11 @@
 
 @import "component/aside.css";
 @import "component/header.css";
+@import "component/sub-container.css";
+@import "component/profile-image.css";
 
 @import "screen/login.css";
+@import "screen/chatting.css";
 @import "screen/friend.css";
 @import "screen/more.css";
 @import "screen/chatting-window.css";
@@ -32,27 +35,10 @@ body {
 .flex {
   display: flex !important;
 }
+
 .flex__container-center {
   justify-content: center;
   align-items: center;
-}
-.sub-container--create {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--gray_7);
-  z-index: 300;
-}
-
-.popup-container {
-  display: flex;
-  position: relative;
-  top: 75px;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background-color: var(--white);
 }
 
 .sub-friend {
@@ -92,21 +78,6 @@ body {
   border-bottom: 1px solid var(--gray_2);
 }
 
-.sub-container--overflow {
-  overflow: hidden;
-}
-
-.popup__icon--size {
-  display: flex !important;
-  justify-content: flex-end;
-  font-size: 20px;
-  padding: 0 20px;
-}
-
-.popup__icon--size::before {
-  cursor: pointer;
-}
-
 .icon--size {
   width: 30px;
 }
@@ -131,83 +102,4 @@ body {
 
 .no-form {
   justify-content: center;
-}
-
-.main-container {
-  margin: 30px 5% 0 0;
-}
-
-.main-list {
-  padding: 10px 0 10px 5%;
-  cursor: pointer;
-}
-
-.main-list:hover {
-  background-color: var(--gray_1);
-}
-.main-list:nth-last-child(1) {
-  margin-bottom: 10px;
-}
-.main-list__text {
-  flex-direction: column;
-  justify-content: space-evenly;
-  flex: 1;
-}
-.main-list__title {
-  align-items: center;
-}
-
-.main-list__name {
-  font-size: 14px;
-  font-weight: bold;
-  padding-right: 10px;
-}
-.main-list__message {
-  font-size: 13px;
-  color: var(--gray_7);
-}
-
-.main-list__h3 {
-  font-size: 12px;
-  color: var(--gray_6);
-  padding: 10px 0 10px 0;
-  margin-left: 5%;
-  border-top: 1px solid var(--gray_1);
-}
-
-.main-list__image {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.main-list__number {
-  font-size: 13px;
-  color: var(--gray_6);
-  margin-right: 5px;
-}
-
-.main-list__serence-bell {
-  color: var(--gray_6);
-}
-
-.profile-image--big {
-  width: 70px;
-  height: 70px;
-  margin-right: 5%;
-}
-.profile-image--big--radius {
-  width: 100%;
-  border-radius: 25px;
-}
-
-.profile-image--small {
-  width: 50px;
-  height: 50px;
-  margin-right: 5%;
-}
-.profile-image--small--radius {
-  width: 100%;
-  border-radius: 20px;
 }

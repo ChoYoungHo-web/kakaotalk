@@ -27,6 +27,7 @@ findIdCheck = () => {
   } else if (!checkBirthday(birthday.value)) {
     return false;
   }
+  window.location.replace(`/login.html`);
   return true;
 };
 
@@ -43,6 +44,7 @@ resetPwdCheck = () => {
   } else if (!checkSamePwd(changePwd.value, changePwdCheck.value)) {
     return false;
   }
+  window.location.replace(`/login.html`);
   return true;
 };
 
@@ -63,6 +65,7 @@ singUpCheck = () => {
   if (!checkBirthday(birthday.value)) {
     return false;
   }
+  window.location.replace(`/login.html`);
   return true;
 };
 
