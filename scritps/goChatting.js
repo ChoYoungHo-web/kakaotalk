@@ -1,7 +1,7 @@
 let list = document.querySelectorAll('[name="list"]');
 let name = document.querySelector('[name = "name"]');
-
 let chattingBox = document.querySelector("#chattingBox");
+let backBtn = document.querySelector("#backBtn");
 
 
 goChatting = (e) => {
@@ -28,6 +28,16 @@ goChatting = (e) => {
   xhr.send("");
 };
 
+backFunction = (e) => {
+  if (e.clientX < 35) {
+    body.classList.remove("js-overflow");
+    chattingBox.classList.remove('chatting__container');
+    chattingBox.classList.add('none');
+  }
+};
+
+
 for (let i = 0; i < list.length; i++) {
   list[i].addEventListener("dblclick", goChatting);
 }
+backBtn.addEventListener("click", backFunction);

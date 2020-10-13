@@ -77,8 +77,8 @@
       </ul>
       <div class="none" name="setting">
         <ul>
-          <li>
-            <a href="setting.html"><span>설정</span></a>
+          <li id="settingBtn">
+            <span>설정</span>
           </li>
           <li>
             <a href="lock_mode.html">잠금모드</a>
@@ -298,9 +298,21 @@
         </div>
       </footer>
     </article>
+    <article id="settingBox" class="none">
+      <div id="settingContainer">
+        <i id="settingBoxClose" class="fas fa-times popup__icon--size"></i>
+        <h3>개인정보</h3>
+        <div>
+          <span>이메일</span>
+          <span>sfsf@naver.com</span>
+        </div>
+        <div>
+          <span>비밀번호 변경</span>
+        </div>
+      </div>
+    </article>
     <script src="scritps/subContainer.js"></script>
     <script src="scritps/asideSub.js"></script>
     <script src="scritps/goChatting.js"></script>
-    <script src="scritps/chattingWindow.js"></script>
   </body>
 </html>
