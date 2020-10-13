@@ -1,6 +1,9 @@
 let list = document.querySelectorAll('[name="list"]');
 let name = document.querySelector('[name = "name"]');
 
+let chattingBox = document.querySelector("#chattingBox");
+
+
 goChatting = (e) => {
   let xhr = new XMLHttpRequest();
   xhr.onreadystatechange = () => {
@@ -8,10 +11,14 @@ goChatting = (e) => {
       if (xhr.status === 200 || xhr.status === 201) {
         for (let i = 0; i < e.path.length; i++) {
           if (e.path[i].id > 0) {
-            console.log(e.path[i].id);
-            window.location.replace(
-              `/chatting_window.html?userId=${e.path[i].id}`
-            );
+            // window.location.replace(
+            //   `/chatting_window.html?userId=${e.path[i].id}`
+            // );
+            if(chattingBox.classList[0] === 'none'){
+              body.classList.add("js-overflow");
+              chattingBox.classList.add('chatting__container');
+              chattingBox.classList.remove('none');
+            }
           }
         }
       }
