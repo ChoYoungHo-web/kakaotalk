@@ -1,47 +1,106 @@
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
+@media (min-width: 1025px) {
+  .grid {
+    display: grid;
+    grid-template:
+      "aside header" 100px
+      "aside main"
+      / 80px 1fr;
+  }
+  .grid header {
+    grid-area: header;
+  }
+  .grid aside {
+    grid-area: aside;
+  }
+  .grid main {
+    grid-area: main;
+  }
+  .grid footer {
+    grid-area: footer;
+  }
 
-@media (min-width: 1281px) {
+  .grid__header {
+    position: fixed;
+    right: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: calc(100% - 80px);
+    background-color: #fff;
+  }
+
+  .aside {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .aside__ul {
+    width: 80px;
+    height: 100vh;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--gray_2);
+  }
+
+  .aside-sub__setting {
+    display: block;
+    position: fixed;
+    left: 80px;
+    bottom: 50px;
+    border: 1px solid var(--gray_9);
+    background-color: var(--white);
+    padding: 7px;
+  }
+
+  .aside-sub__setting > li {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+  .aside-sub__setting > li:hover {
+    background-color: var(--gray_1);
+  }
 }
-
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-}
-
-/* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
 
 @media (min-width: 768px) and (max-width: 1024px) {
 }
 
-/* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 }
 
-/* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-
 @media (min-width: 481px) and (max-width: 767px) {
-}
+  .aside {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .aside__ul {
+    width: 100%;
+    justify-content: space-between;
+    background-color: #e9ecef;
+    padding: 20px;
+  }
 
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 201;
+  }
+
+  main {
+    position: relative;
+    top: 110px;
+    margin-bottom: 80px;
+    background-color: #fff;
+    z-index: 200;
+  }
+
+  aside {
+    z-index: 202;
+  }
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
 }

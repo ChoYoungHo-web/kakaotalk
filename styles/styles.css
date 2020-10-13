@@ -43,6 +43,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: var(--gray_7);
+  z-index: 300;
 }
 
 .popup-container {
@@ -106,26 +107,6 @@ body {
   cursor: pointer;
 }
 
-.grid {
-  display: grid;
-  grid-template:
-    "aside header" 100px
-    "aside main"
-    / 80px 1fr;
-}
-.grid header {
-  grid-area: header;
-}
-.grid aside {
-  grid-area: aside;
-}
-.grid main {
-  grid-area: main;
-}
-.grid footer {
-  grid-area: footer;
-}
-
 .icon--size {
   width: 30px;
 }
@@ -153,7 +134,7 @@ body {
 }
 
 .main-container {
-  margin: 20px 5% 0 0;
+  margin: 30px 5% 0 0;
 }
 
 .main-list {
