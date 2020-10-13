@@ -5,11 +5,11 @@ let setting = document.querySelector('[name="setting"]');
 createSetting = (v) => {
   if (VALUE.classList[4] === "active") {
     VALUE.classList.remove("active");
-    v.classList.remove("bottom-emoticon__setting-sub");
+    v.classList.remove("aside-sub__setting");
     v.classList.add("none");
   } else {
     VALUE.classList.add("active");
-    v.classList.add("bottom-emoticon__setting-sub");
+    v.classList.add("aside-sub__setting");
     v.classList.remove("none");
   }
 };
