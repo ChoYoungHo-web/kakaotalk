@@ -38,8 +38,8 @@ body {
 }
 
 .body__fix {
-  height: 100vh;
-  overflow: hidden;
+  /* height: 100vh; */
+  /* overflow: hidden; */
 }
 
 .sub-container--create {
@@ -127,7 +127,6 @@ body {
 }
 .grid main {
   grid-area: main;
-  overflow-y: auto;
 }
 .grid footer {
   grid-area: footer;

@@ -1,11 +1,15 @@
 .header-container {
   width: 90%;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .grid__header {
+  position: fixed;
+  right: 0;
   flex-direction: column;
   justify-content: flex-end;
+  width: calc(100% - 80px);
+  background-color: #fff;
 }
 .grid__header--top {
   justify-content: space-between;
