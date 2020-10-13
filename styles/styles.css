@@ -8,12 +8,12 @@
 @import "component/header.css";
 @import "component/sub-container.css";
 @import "component/profile-image.css";
+@import "component/chatting-window.css";
 
 @import "screen/login.css";
 @import "screen/chatting.css";
 @import "screen/friend.css";
 @import "screen/more.css";
-@import "screen/chatting-window.css";
 
 body {
   font-family: "Nanum Gothic", sans-serif;
@@ -41,65 +41,9 @@ body {
   align-items: center;
 }
 
-.sub-friend {
-  height: 300px;
-}
-.sub-friend--title {
-  padding-left: 30px;
-}
-.sub-friend--text {
-  position: relative;
-  padding: 0 0 10px 30px;
-}
-.sub-friend--text::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background-color: var(--gray_2);
-}
-
-.sub-friend__form {
-  padding: 0 30px;
-}
-
-.sub-friend--form {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.sub-friend__form--email {
-  width: 100%;
-  font-size: 16px;
-  border-width: 0;
-  border-bottom: 1px solid var(--gray_2);
-}
-
 .icon--size {
   width: 30px;
 }
-/* login */
-
-.input-group {
-  position: relative;
-}
-.input-group__label {
-  position: absolute;
-  top: 14px;
-  left: 10px;
-  color: var(--gray_5);
-  font-size: 14px;
-  pointer-events: none;
-  transition: 0.2s ease all;
-}
-
-.input__submit--center {
-  padding: 10px;
-}
-
 .no-form {
   justify-content: center;
 }

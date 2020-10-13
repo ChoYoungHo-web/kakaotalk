@@ -110,3 +110,20 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
+
+.input-group {
+  position: relative;
+}
+.input-group__label {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  color: var(--gray_5);
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.input__submit--center {
+  padding: 10px;
+}
