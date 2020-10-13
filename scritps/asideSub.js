@@ -1,6 +1,7 @@
-const VALUE = document.querySelector("#settingIcon");
+let VALUE = document.querySelector("#settingIcon");
 
 let setting = document.querySelector('[name="setting"]');
+let html = document.querySelector('html');
 
 let settingBtn = document.querySelector('#settingBtn');
 let settingBox = document.querySelector("#settingBox");
@@ -21,8 +22,7 @@ createSetting = (v) => {
 };
 
 createSettingContainer = () =>{
-  
-  body.classList.add("js-overflow");
+  html.classList.add("js-overflow");
   settingBox.classList.add("sub-container--create");
   settingContainer.classList.add("popup-container", "sub-friend");
   settingBox.classList.remove('none');
@@ -30,7 +30,7 @@ createSettingContainer = () =>{
 
 settingBoxCloseHandle = (e) =>{
   if(e.clientX > 460){
-    body.classList.remove("js-overflow");
+    html.classList.remove("js-overflow");
     settingBox.classList.remove("sub-container--create");
     settingContainer.classList.remove("popup-container", "sub-friend");
     settingBox.classList.add('none');

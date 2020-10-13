@@ -75,7 +75,7 @@
 .chatting-main__date--text {
   justify-content: center;
   width: 33%;
-  font-size: 13px;
+  font-size: 0.5rem;
 }
 .chatting-main__date--after {
   position: relative;
