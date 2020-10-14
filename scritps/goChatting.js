@@ -18,6 +18,10 @@ goChatting = (e) => {
               body.classList.add("js-overflow");
               chattingBox.classList.add('chatting__container');
               chattingBox.classList.remove('none');
+              subContainer.classList.add('none');
+              subContainer.classList.remove('sub-container--create');
+              settingBox.classList.add('none');
+              settingBox.classList.remove('sub-container--create');
             }
           }
         }
@@ -28,12 +32,10 @@ goChatting = (e) => {
   xhr.send("");
 };
 
-backFunction = (e) => {
-  if (e.clientX < 35) {
+backFunction = () => {
     body.classList.remove("js-overflow");
     chattingBox.classList.remove('chatting__container');
     chattingBox.classList.add('none');
-  }
 };
 
 
