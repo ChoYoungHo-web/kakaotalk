@@ -40,6 +40,6 @@ backFunction = () => {
 
 
 for (let i = 0; i < list.length; i++) {
-  list[i].addEventListener("dblclick", goChatting);
+  list[i].addEventListener("click", goChatting);
 }
 backBtn.addEventListener("click", backFunction);
