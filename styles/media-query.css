@@ -29,8 +29,9 @@
     z-index: 400;
   }
 
-  .body__fix {
-    overflow-y: hidden;
+  .body--background {
+    width: 50%;
+    margin: 0 auto;
   }
 
   .aside {
