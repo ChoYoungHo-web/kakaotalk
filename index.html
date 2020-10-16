@@ -3,316 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>카카오톡 : 친구</title>
+    <title>카카오톡 : 로그인</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <script
       src="https://kit.fontawesome.com/9452825322.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="grid body__fix">
-    <header class="flex grid__header">
-      <div class="header-container">
-        <div class="flex grid__header--top">
-          <h2 class="grid__header--title">친구</h2>
-          <i
-            id="subClickBtn"
-            class="fas fa-user-plus icon--size grid__header--icon-size"
-            title="친구 추가"
-          ></i>
-        </div>
-        <form class="grid__header--form" action="">
-          <!-- <img src="images/icons/search.png" alt="검색" /> -->
-          <input
-            class="grid__header--form--search"
-            type="text"
-            placeholder="이름 검색"
-            maxlength="30"
-          />
-        </form>
-      </div>
+  <body class="body--background body__fix">
+    <header class="flex flex__container-center">
+      <a href="index.html">
+        <img
+          src="images/icons/kakao-icon.png"
+          alt="카카오톡 아이콘"
+          class="login--img"
+        />
+      </a>
     </header>
-    <aside class="flex aside">
-      <ul class="flex aside__ul">
-        <li>
-          <a href="index.html">
-            <i
-              class="fas fa-user fa-2x icon--size aside__img--opacity"
-              title="친구"
-            ></i
-          ></a>
-        </li>
-        <li>
-          <a class="top-emoticon__chatting" href="chatting.html"
-            ><i
-              class="fas fa-comment fa-2x icon--size aside__img--opacity"
-              title="채팅"
-            ></i
-          ></a>
-        </li>
-        <li>
-          <a href="more.html">
-            <i
-              class="fas fa-ellipsis-h fa-2x icon--size aside__img--opacity"
-              title="더보기"
-            ></i
-          ></a>
-        </li>
-        <li>
-          <i
-            class="far fa-smile fa-2x icon--size"
-            title="카카오 이모티콘샵"
-          ></i>
-        </li>
-        <li>
-          <i class="far fa-bell fa-2x icon--size" title="알림"></i>
-        </li>
-        <li>
-          <i
-            id="settingIcon"
-            class="fas fa-cog fa-2x icon--size"
-            title="설정"
-          ></i>
-        </li>
-      </ul>
-      <div class="none" name="setting">
-        <ul>
-          <li id="settingBtn">
-            <span>설정</span>
-          </li>
-          <li>
-            <a href="lock_mode.html">잠금모드</a>
-          </li>
-          <li>
-            <a href="login.html"><span>로그아웃</span></a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-    <main class="main">
-      <div class="main-container">
-        <article>
-          <div class="flex main-list" name="list" id="1">
-            <div class="profile-image--big">
-              <img
-                class="profile-image--big--radius"
-                src="images/profile/default-profile_1.png"
-                alt="내 프로필"
-              />
-            </div>
-            <div class="flex main-list__text">
-              <div class="main-list__name" name="name">조영호</div>
-              <div class="main-list__message">상태 메세지</div>
-            </div>
-          </div>
-        </article>
-        <article>
-          <h3 class="main-list__h3">생일인 친구</h3>
-          <div class="flex main-list">
-            <div class="profile-image--small">
-              <img
-                class="profile-image--small--radius"
-                src="images/profile/birthday-profile.png"
-                alt="생일 프로필"
-              />
-            </div>
-            <div class="flex flex__container-center main-list__one-line">
-              <div class="main-list__name">친구의 생일을 확인해보세요!</div>
-              <div class="main-list__message">2</div>
-            </div>
-          </div>
-        </article>
-        <article>
-          <ul>
-            <h3 class="main-list__h3">즐겨찾기</h3>
-            <li class="flex main-list" name="list" id="2">
-              <div class="profile-image--small">
-                <img
-                  class="profile-image--small--radius"
-                  src="images/profile/default-profile_2.png"
-                  alt="내 프로필"
-                />
-              </div>
-              <div class="flex main-list__text">
-                <div class="main-list__name" name="name">내 이름</div>
-                <div class="main-list__message">상태 메세지</div>
-              </div>
-            </li>
-            <li class="flex main-list">
-              <div class="profile-image--small">
-                <img
-                  class="profile-image--small--radius"
-                  src="images/profile/default-profile_3.png"
-                  alt="내 프로필"
-                />
-              </div>
-              <div class="flex main-list__text">
-                <div class="main-list__name">내 이름</div>
-                <div class="main-list__message">상태 메세지</div>
-              </div>
-            </li>
-          </ul>
-        </article>
-        <article>
-          <h3 class="main-list__h3">채널</h3>
-          <div class="flex main-list">
-            <div class="profile-image--small">
-              <img
-                class="profile-image--small--radius"
-                src="images/profile/channer-profile.png"
-                alt="채널 프로필"
-              />
-            </div>
-            <div class="flex flex__container-center main-list__one-line">
-              <div class="main-list__name">채널</div>
-              <div class="main-list__message">2</div>
-            </div>
-          </div>
-        </article>
-        <article>
-          <ul>
-            <h3 class="main-list__h3">친구<span>4</span></h3>
-            <li class="flex main-list">
-              <div class="profile-image--small">
-                <img
-                  class="profile-image--small--radius"
-                  src="images/profile/default-profile_2.png"
-                  alt="내 프로필"
-                />
-              </div>
-              <div class="flex main-list__text">
-                <div class="main-list__name">내 이름</div>
-                <div class="main-list__message">상태 메세지</div>
-              </div>
-            </li>
-            <li class="flex main-list">
-              <div class="profile-image--small">
-                <img
-                  class="profile-image--small--radius"
-                  src="images/profile/default-profile_3.png"
-                  alt="내 프로필"
-                />
-              </div>
-              <div class="flex main-list__text">
-                <div class="main-list__name">내 이름</div>
-                <div class="main-list__message">상태 메세지</div>
-              </div>
-            </li>
-          </ul>
-        </article>
-      </div>
-    </main>
-    <article id="subContainer" class="none">
-      <div id="popup">
-        <i id="popupClose" class="fas fa-times popup__icon--size"></i>
-        <h3 class="sub-friend--title">친구 추가</h3>
-        <p class="sub-friend--text">이메일주소로 추가</p>
-        <form action="" class="sub-friend__form">
+    <main class="login-main">
+      <form class="flex login__form" action="friend.html" method="GET">
+        <div class="input-group">
           <input
-            type="email"
-            placeholder="이메일주소로 추가"
-            class="sub-friend__form--email"
+            type="text"
+            id="idValue"
+            class="login__form--input"
+            name="id"
             required
           />
+          <label class="input-group__label">카카오 계정(이메일 주소)</label>
+        </div>
+
+        <div class="input-group">
           <input
-            type="submit"
-            class="sub-friend__form--submit"
-            value="친구 추가"
+            type="password"
+            id="pwdValue"
+            class="login__form--input"
+            name="pwd"
+            required
           />
-        </form>
-      </div>
-    </article>
-    <article id="chattingBox" class="none">
-      <header class="chatting-header--background-color">
-        <div class="flex flex__container-center chatting-header">
-          <i
-            id="backBtn"
-            class="fas fa-arrow-left grid__header--icon-size chatting-header__column"
-          ></i>
-          <div class="flex chatting-header__column chatting-header--name">
-            <div class="chatting-header__img profile-image--small">
-              <img
-                src="images/profile/default-profile_1.png"
-                alt="프로필 사진"
-                class="profile-image--small--radius"
-              />
-            </div>
-            <div class="flex flex__container-center">
-              <span>이름</span>
-            </div>
-          </div>
-          <div class="flex chatting-header__column chatting-header__menu">
-            <i
-              class="fas fa-search grid__header--icon-size chatting-header__menu--search"
-            ></i>
-            <i class="fas fa-bars grid__header--icon-size"></i>
-          </div>
+          <label class="input-group__label">비밀번호</label>
         </div>
-      </header>
-      <main class="chatting-main body__fix">
-        <div class="flex chatting-main__date">
-          <div class="flex chatting-main__date--before"></div>
-          <div class="flex chatting-main__date--text">
-            <span>2020년 9월 27일 일요일</span>
-          </div>
-          <div class="flex chatting-main__date--after"></div>
-        </div>
-        <div class="chatting-main__speech-bubble">
-          <div class="chatting-main__speech-bubble--style">
-            <p class="chatting-main__speech-bubble--size">
-              회사 생활 꿀팁<br />1. 처음 들어갔는데 사수가 있다면 : 사수의 말을
-              잘 듣습니다. 인수인계하는 건 목이 아픈 일입니다. 광동비타500
-              제공하거나 함께 담배 타임을 가지도록 합시다. 담배 타임엔 색다른
-              진실들을 마주할 수 있습니다. 비흡연자라면 커피 타임을 추천합니다.<br />
-              2. 처음 들어갔는데 사수가 없다면 : 지난 프로젝트 기획서와
-              결과보고서를 달라고 해서 뒤적거리도록 합니다. 뭔 말인지 모르겠어도
-              뒤적거려봅니다.<br />
-              3. 책상을 정리해보자 : 1일 차엔 문구류 세팅, 2일 차엔 가습기·다육이
-              세팅, 3일 차엔 애인 사진·담요·미니 선풍기 세팅, 4일 차엔 간식 세팅,
-            </p>
-          </div>
-        </div>
-      </main>
-      <footer class="chatting-footer">
-        <div class="chatting-window-footer">
-          <form action="" class="flex chatting-window-footer__form">
-            <textarea class="chatting-window-footer__form--textarea"></textarea>
-            <button class="chatting-window-footer__form--button">전송</button>
-          </form>
-          <div class="flex chatting-window-footer__sub-menu">
-            <div class="chatting-window-footer__sub-menu--emoticon">
-              <i class="far fa-smile icon--size" title="이모티콘"></i>
-              <i class="fas fa-file-upload" title="업로드"></i>
-            </div>
-            <div class="flex chatting-window-footer__sub-menu--slide">
-              <input
-                type="range"
-                min="1"
-                max="100"
-                value="100"
-                class="chatting-window-footer__sub-menu--transparency"
-                title="투명도 설정"
-              />
-            </div>
-          </div>
-        </div>
-      </footer>
-    </article>
-    <article id="settingBox" class="none">
-      <div id="settingContainer">
-        <i id="settingBoxClose" class="fas fa-times popup__icon--size"></i>
-        <h3 class="sub-friend--title">개인정보</h3>
-        <div class="sub-friend__form">
-          <span>이메일</span>
-          <span>sfsf@naver.com</span>
-        </div>
-        <div class="sub-friend__form">
-          <span>비밀번호 변경</span>
-        </div>
-      </div>
-    </article>
-    <script src="scritps/subContainer.js"></script>
-    <script src="scritps/asideSub.js"></script>
-    <script src="scritps/goChatting.js"></script>
+
+        <input
+          type="submit"
+          value="로그인"
+          id="submitBtn"
+          class="login__form--input input__submit--center login__form--btn"
+        />
+      </form>
+    </main>
+    <footer class="flex flex__container-center">
+      <ul class="flex find-info">
+        <li class="find-info__li">
+          <a href="find-id.html" class="find-info__li-a">카카오계정 찾기</a>
+        </li>
+        <li class="find-info__li">
+          <a href="reset-pwd.html" class="find-info__li-a">비밀번호 재설정</a>
+        </li>
+        <li class="find-info__li">
+          <a href="sign-up.html" class="find-info__li-a">회원가입</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="scritps/btnActivation.js"></script>
   </body>
 </html>

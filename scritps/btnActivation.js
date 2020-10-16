@@ -16,7 +16,7 @@ loginCheck = () => {
   } else if (!checkPwd(pwd.value)) {
     return false;
   }
-  window.location.replace(`/index.html`);
+  window.location.replace(`/friend.html`);
   return true;
 };
 
@@ -27,7 +27,7 @@ findIdCheck = () => {
   } else if (!checkBirthday(birthday.value)) {
     return false;
   }
-  window.location.replace(`/login.html`);
+  window.location.replace(`/index.html`);
   return true;
 };
 
@@ -44,7 +44,7 @@ resetPwdCheck = () => {
   } else if (!checkSamePwd(changePwd.value, changePwdCheck.value)) {
     return false;
   }
-  window.location.replace(`/login.html`);
+  window.location.replace(`/index.html`);
   return true;
 };
 
@@ -65,7 +65,7 @@ singUpCheck = () => {
   if (!checkBirthday(birthday.value)) {
     return false;
   }
-  window.location.replace(`/login.html`);
+  window.location.replace(`/index.html`);
   return true;
 };
 
@@ -77,7 +77,7 @@ lockModeCheck = () => {
   if (!checkPwd(pwd.value)) {
     return false;
   }
-  window.location.replace(`/index.html`);
+  window.location.replace(`/friend.html`);
   return true;
 };
 
@@ -175,7 +175,7 @@ pageSelect = (e) => {
   xhr.onreadystatechange = () => {
     if (xhr.readyState === 4) {
       if (xhr.status === 200 || xhr.status === 201) {
-        if (URL.search("login") === 1) {
+        if (URL.search("index") === 1) {
           loginCheck();
         }
         if (URL.search("find") === 1) {
