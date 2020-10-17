@@ -178,6 +178,9 @@ pageSelect = (e) => {
         // if (URL.search("index") === 1) {
         //   loginCheck();
         // }
+        if(URL === '/kakaotalk/'){
+          loginCheck();
+        }
         if((URL.match('index')[0] === 'index') === true){
           loginCheck();
         }
