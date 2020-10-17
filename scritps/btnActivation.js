@@ -175,7 +175,10 @@ pageSelect = (e) => {
   xhr.onreadystatechange = () => {
     if (xhr.readyState === 4) {
       if (xhr.status === 200 || xhr.status === 201) {
-        if (URL.search("index") === 1) {
+        // if (URL.search("index") === 1) {
+        //   loginCheck();
+        // }
+        if((URL.match('index')[0] === 'index') === true){
           loginCheck();
         }
         if (URL.search("find") === 1) {
