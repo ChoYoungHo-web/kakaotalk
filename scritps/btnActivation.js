@@ -170,9 +170,7 @@ checkBirthday = (v) => {
 //페이지별 함수 구현
 pageSelect = (e) => {
   e.preventDefault();
-  let xhr = new XMLHttpRequest();
 
-  xhr.onreadystatechange = () => {
     if (URL.search("index") > 0) {
       loginCheck();
     }
@@ -188,7 +186,6 @@ pageSelect = (e) => {
     if (URL.search("lock") > 0) {
       lockModeCheck();
     }
-  };
 };
 
 RESULT.addEventListener("click", pageSelect);
