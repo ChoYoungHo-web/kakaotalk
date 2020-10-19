@@ -194,7 +194,7 @@ pageSelect = (e) => {
     }
   };
   xhr.open("GET", "/");
-  // xhr.send();
+  xhr.send("");
 };
 
 RESULT.addEventListener("click", pageSelect);
