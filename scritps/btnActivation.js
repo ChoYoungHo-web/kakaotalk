@@ -175,25 +175,19 @@ pageSelect = (e) => {
   xhr.onreadystatechange = () => {
     if (xhr.readyState === 4) {
       if (xhr.status === 200 || xhr.status === 201) {
-        // if (URL.search("index") === 1) {
-        //   loginCheck();
-        // }
-        if(URL === '/kakaotalk/'){
+        if (URL.search("index") > 0) {
           loginCheck();
         }
-        if((URL.match('index')[0] === 'index') === true){
-          loginCheck();
-        }
-        if (URL.search("find") === 1) {
+        if (URL.search("find") > 0) {
           findIdCheck();
         }
-        if (URL.search("reset") === 1) {
+        if (URL.search("reset") > 0) {
           resetPwdCheck();
         }
-        if (URL.search("sign") === 1) {
+        if (URL.search("sign") > 0) {
           singUpCheck();
         }
-        if (URL.search("lock") === 1) {
+        if (URL.search("lock") > 0) {
           lockModeCheck();
         }
       }
