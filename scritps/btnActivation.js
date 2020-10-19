@@ -173,28 +173,22 @@ pageSelect = (e) => {
   let xhr = new XMLHttpRequest();
 
   xhr.onreadystatechange = () => {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200 || xhr.status === 201) {
-        if (URL.search("index") > 0) {
-          loginCheck();
-        }
-        if (URL.search("find") > 0) {
-          findIdCheck();
-        }
-        if (URL.search("reset") > 0) {
-          resetPwdCheck();
-        }
-        if (URL.search("sign") > 0) {
-          singUpCheck();
-        }
-        if (URL.search("lock") > 0) {
-          lockModeCheck();
-        }
-      }
+    if (URL.search("index") > 0) {
+      loginCheck();
+    }
+    if (URL.search("find") > 0) {
+      findIdCheck();
+    }
+    if (URL.search("reset") > 0) {
+      resetPwdCheck();
+    }
+    if (URL.search("sign") > 0) {
+      singUpCheck();
+    }
+    if (URL.search("lock") > 0) {
+      lockModeCheck();
     }
   };
-  xhr.open("GET", "/");
-  xhr.send("");
 };
 
 RESULT.addEventListener("click", pageSelect);
