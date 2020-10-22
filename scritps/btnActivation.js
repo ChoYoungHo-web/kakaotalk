@@ -16,7 +16,7 @@ loginCheck = () => {
   } else if (!checkPwd(pwd.value)) {
     return false;
   }
-  window.location.replace(`/friend.html`);
+  window.location.replace(`/kakaotalk/friend.html`);
   return true;
 };
 
@@ -27,7 +27,7 @@ findIdCheck = () => {
   } else if (!checkBirthday(birthday.value)) {
     return false;
   }
-  window.location.replace(`/index.html`);
+  window.location.replace(`/kakaotalk/index.html`);
   return true;
 };
 
@@ -44,7 +44,7 @@ resetPwdCheck = () => {
   } else if (!checkSamePwd(changePwd.value, changePwdCheck.value)) {
     return false;
   }
-  window.location.replace(`/index.html`);
+  window.location.replace(`/kakaotalk/index.html`);
   return true;
 };
 
@@ -65,7 +65,7 @@ singUpCheck = () => {
   if (!checkBirthday(birthday.value)) {
     return false;
   }
-  window.location.replace(`/index.html`);
+  window.location.replace(`/kakaotalk/index.html`);
   return true;
 };
 
@@ -77,7 +77,7 @@ lockModeCheck = () => {
   if (!checkPwd(pwd.value)) {
     return false;
   }
-  window.location.replace(`/friend.html`);
+  window.location.replace(`/kakaotalk/friend.html`);
   return true;
 };
 
@@ -168,9 +168,11 @@ checkBirthday = (v) => {
 };
 
 //페이지별 함수 구현
-pageSelect = (e) => {
+pageSelect = () => {
   e.preventDefault();
-
+    if(URL.search("/") > 0){
+      loginCheck();
+    }
     if (URL.search("index") > 0) {
       loginCheck();
     }

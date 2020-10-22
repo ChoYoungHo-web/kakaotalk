@@ -22,17 +22,19 @@
     </header>
     <main class="login-main">
       <form class="flex login__form" action="friend.html" method="GET">
-        <div class="input-group">
-          <input
-            type="text"
-            id="idValue"
-            class="login__form--input"
-            name="id"
-            required
-          />
-          <label class="input-group__label">카카오 계정(이메일 주소)</label>
+        <div class="login__gorm--id">
+          <div class="input-group">
+            <input
+              type="text"
+              id="idValue"
+              class="login__form--input"
+              name="id"
+              required
+            />
+            <label class="input-group__label">카카오 계정(이메일 주소)</label>
+          </div>
+          <div class="none">이메일 주소를 입력해주세요.</div>
         </div>
-
         <div class="input-group">
           <input
             type="password"
@@ -43,7 +45,8 @@
           />
           <label class="input-group__label">비밀번호</label>
         </div>
-
+        <div class="none">비밀번호를 입력해주세요!</div>
+        <div class="none">가입하지 않은 아이디이거나, 잘못된 비밀번호입니다.</div>
         <input
           type="submit"
           value="로그인"
