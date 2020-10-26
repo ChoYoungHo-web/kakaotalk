@@ -9,6 +9,8 @@ let birthday = document.querySelector('[name="birthday"]');
 let changePwd = document.querySelector('[name="changePwd"]');
 let changePwdCheck = document.querySelector('[name="changePwdCheck"]');
 
+let errId = document.querySelector('#errId');
+
 //로그인 로직
 loginCheck = () => {
   if (!checkId(id.value)) {
@@ -84,7 +86,6 @@ lockModeCheck = () => {
 //공백 확인
 checkExistData = (ckeck) => {
   if (ckeck === "") {
-    alert("공백입니다.");
     return false;
   }
   return true;
@@ -93,12 +94,16 @@ checkExistData = (ckeck) => {
 //이메일 확인
 checkId = (v) => {
   if (!checkExistData(v)) {
+    errId.classList.add('hidden-info');
+    errId.innerText = '이메일 주소를 입력해주세요.';
+    id.focus();
     return false;
   }
   let email = /^[A-Za-z0-9_]+[A-Za-z0-9]*[@]{1}[A-Za-z0-9]+[A-Za-z0-9]*[.]{1}[A-Za-z]{1,3}$/;
 
   if (!email.test(v)) {
-    alert("이메일 형식이 올바르지 않습니다.");
+    errId.classList.add('hidden-info');
+    errId.innerText = '이메일 형식이 올바르지 않습니다.';
     id.focus();
     return false;
   }
