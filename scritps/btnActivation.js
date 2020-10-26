@@ -10,6 +10,12 @@ let changePwd = document.querySelector('[name="changePwd"]');
 let changePwdCheck = document.querySelector('[name="changePwdCheck"]');
 
 let errId = document.querySelector('#errId');
+let errPwd = document.querySelector('#errPwd');
+let errUser = document.querySelector('#errUser');
+let errBirthday = document.querySelector('#errBirthday');
+let errChangePwd = document.querySelector('#errChangePwd');
+let errChangePwdCheck = document.querySelector('#errChangePwdCheck');
+
 
 //로그인 로직
 loginCheck = () => {
@@ -41,11 +47,14 @@ resetPwdCheck = () => {
     return false;
   } else if (!checkBirthday(birthday.value)) {
     return false;
-  } else if (!checkPwd(pwd.value)) {
+  } else if (!checkPwd(pwd.value, pwd.name)) {
     return false;
-  } else if (!checkSamePwd(changePwd.value, changePwdCheck.value)) {
+  }else if (!checkPwd(changePwd.value, changePwd.name)) {
     return false;
   }
+  // else if (!checkSamePwd(changePwd.value, changePwdCheck.value)) {
+  //   return false;
+  // }
   window.location.replace(`/kakaotalk/index.html`);
   return true;
 };
@@ -58,12 +67,12 @@ singUpCheck = () => {
   if (!checkId(id.value)) {
     return false;
   }
-  if (!checkPwd(pwd.value)) {
+  if (!checkPwd(pwd.value, pwd.name)) {
     return false;
   }
-  if (!checkSamePwd(pwd.value, pwdCheck.value)) {
-    return false;
-  }
+  // if (!checkSamePwd(pwd.value, pwdCheck.value)) {
+  //   return false;
+  // }
   if (!checkBirthday(birthday.value)) {
     return false;
   }
@@ -76,7 +85,7 @@ lockModeCheck = () => {
   if (!checkExistData(pwd.value)) {
     return false;
   }
-  if (!checkPwd(pwd.value)) {
+  if (!checkPwd(pwd.value, pwd.name)) {
     return false;
   }
   window.location.replace(`/kakaotalk/friend.html`);
@@ -107,68 +116,102 @@ checkId = (v) => {
     id.focus();
     return false;
   }
+  errId.classList.remove('hidden-info');
+  errId.innerText = '';
   return true;
 };
 
 //패스워드 확인
-checkPwd = (v) => {
+checkPwd = (v, name) => {
+  console.log(name);
   if (!checkExistData(v)) {
+    errPwd.classList.add('hidden-info');
+    errPwd.innerText = '비밀번호를 입력해주세요.';
+    pwd.focus();
     return false;
   }
   let password = /^[a-zA-Z0-9]{9,}$/;
   let check_num = v.search(/[0-9]/g);
   let check_eng = v.search(/[a-z]/gi);
   if (!password.test(v)) {
-    alert("영문과 숫자를 모두 포함해 9자리 이상 입력해야 합니다.");
+    errPwd.classList.add('hidden-info');
+    errPwd.innerText = '영문과 숫자를 모두 포함해 9자리 이상 입력해야 합니다.';
     pwd.focus();
     return false;
   } else if (check_num < 0 || check_eng < 0) {
-    alert("영문과 숫자를 모두 포함해야 합니다.");
+    errPwd.classList.add('hidden-info');
+    errPwd.innerText = '영문과 숫자를 모두 포함해야 합니다.';
+    pwd.focus();
     return false;
   }
+  errPwd.classList.remove('hidden-info');
+  errPwd.innerText = '';
   return true;
 };
 
 //패스워드 같은지 확인
-checkSamePwd = (v, check) => {
-  if (!checkExistData(v) || !checkExistData(check)) {
-    return false;
-  }
-  if (!checkPwd(v)) {
-    return false;
-  }
-  if (!checkPwd(check)) {
-    return false;
-  }
-  if (!(v === check)) {
-    alert("비밀번호가 같지 않습니다.");
-    return false;
-  }
-  return true;
-};
+// checkSamePwd = (v, check) => {
+//   if (!checkExistData(v)) {
+//     errChangePwd.classList.add('hidden-info');
+//     errChangePwd.innerText = '비밀번호를 입력해주세요.';
+//     changePwd.focus();
+//     return false;
+//   }
+//   if (!checkExistData(check)) {
+//     errChangePwdCheck.classList.add('hidden-info');
+//     errChangePwdCheck.innerText = '비밀번호를 입력해주세요.';
+//     changePwdCheck.focus();
+//     return false;
+//   }
+//   if (!(v === check)) {
+//     errChangePwdCheck.classList.add('hidden-info');
+//     errChangePwdCheck.innerText = '비밀번호가 같지 않습니다.';
+//     changePwdCheck.focus();
+//     return false;
+//   }
+//   errChangePwd.classList.remove('hidden-info');
+//   errChangePwd.innerText = '';
+//   errChangePwdCheck.classList.remove('hidden-info');
+//   errChangePwdCheck.innerText = '';
+//   return true;
+// };
 
 //이름 확인
 checkName = (v) => {
   if (!checkExistData(v)) {
+    errUser.classList.add('hidden-info');
+    errUser.innerText = '이름을 입력해주세요.';
+    user.focus();
     return false;
   }
   if (v.length < 3) {
-    alert("최소 3자리 이상 입력해야 합니다.");
+    errUser.classList.add('hidden-info');
+    errUser.innerText = '최소 3자리 이상 입력해야 합니다.';
+    user.focus();
     return false;
   }
+  errUser.classList.remove('hidden-info');
+  errUser.innerText = '';
   return true;
 };
 
 //생년월일 확인
 checkBirthday = (v) => {
   if (!checkExistData(v)) {
+    errBirthday.classList.add('hidden-info');
+    errBirthday.innerText = '생년월일을 입력해주세요.';
+    birthday.focus();
     return false;
   }
   let check_num = /^[0-9]{8,8}$/;
   if (!check_num.test(v)) {
-    alert("8자리 숫자만 입력할 수 있습니다.");
+    errBirthday.classList.add('hidden-info');
+    errBirthday.innerText = '8자리 숫자만 입력할 수 있습니다.';
+    birthday.focus();
     return false;
   }
+  errBirthday.classList.remove('hidden-info');
+  errBirthday.innerText = '';
   return true;
 };
 

@@ -22,9 +22,12 @@
     </header>
     <main class="login-main">
       <form class="flex login__form" action="">
-        <div class="input-group">
-          <input type="text" class="login__form--input" name="name" required />
-          <label class="input-group__label">이름</label>
+        <div class="login__form--user">
+          <div class="input-group">
+            <input type="text" class="login__form--input" name="name" required />
+            <label class="input-group__label">이름</label>
+          </div>
+          <div id="errUser"></div>
         </div>
         <div class="login__form--id">
           <div class="input-group">
@@ -33,42 +36,56 @@
           </div>
           <div id="errId"></div>
         </div>
-        <div class="input-group">
-          <input
-            type="text"
-            class="login__form--input"
-            name="birthday"
-            required
-          />
-          <label class="input-group__label">생년월일 예시)19951206</label>
+        <div class="login__form--birthday">
+          <div class="input-group">
+            <input
+              type="text"
+              class="login__form--input"
+              name="birthday"
+              required
+            />
+            <label class="input-group__label">생년월일 예시)19951206</label>
+          </div>
+          <div id="errBirthday"></div>
         </div>
-        <div class="input-group">
-          <input
-            type="password"
-            class="login__form--input"
-            name="pwd"
-            required
-          />
-          <label class="input-group__label">현재 비밀번호</label>
+        <div class="login__form--pwd">
+          <div class="input-group">
+            <input
+              type="password"
+              class="login__form--input"
+              name="pwd"
+              required
+            />
+            <label class="input-group__label">현재 비밀번호</label>
+          </div>
+          <div id="errPwd"></div>
         </div>
-        <div class="input-group">
-          <input
-            type="password"
-            class="login__form--input"
-            name="changePwd"
-            required
-          />
-          <label class="input-group__label">변경할 비밀번호</label>
+        <div class="login__form--changePwd">
+          <div class="input-group">
+            <input
+              type="password"
+              class="login__form--input"
+              name="changePwd"
+              required
+            />
+            <label class="input-group__label">변경할 비밀번호</label>
+          </div>
+          <div id="errChangePwd"></div>
         </div>
-        <div class="input-group">
-          <input
-            type="password"
-            class="login__form--input"
-            name="changePwdCheck"
-            required
-          />
-          <label class="input-group__label">변경할 비밀번호 확인</label>
-        </div>
+
+        <!-- <div class="login__form--changePwdCheck">
+          <div class="input-group">
+            <input
+              type="password"
+              class="login__form--input"
+              name="changePwdCheck"
+              required
+            />
+            <label class="input-group__label">변경할 비밀번호 확인</label>
+          </div>
+          <div id="errChangePwdCheck"></div>
+        </div> -->
+
         <input
           type="submit"
           value="비밀번호 변경"
