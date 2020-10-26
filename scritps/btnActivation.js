@@ -218,7 +218,7 @@ checkBirthday = (v) => {
 //페이지별 함수 구현
 pageSelect = (e) => {
   e.preventDefault();
-    if(URL.search("/") > 0){
+    if(URL.search("kakaotalk") > 0){
       loginCheck();
     }
     if (URL.search("index") > 0) {
