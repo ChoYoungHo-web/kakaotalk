@@ -168,7 +168,7 @@ checkBirthday = (v) => {
 };
 
 //페이지별 함수 구현
-pageSelect = () => {
+pageSelect = (e) => {
   e.preventDefault();
     if(URL.search("/") > 0){
       loginCheck();
